@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreya Ex-Tech Private Limited – Manufacturer of Flameproof Lighting & Switchgear, Vadodara, Gujarat</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1a5e1f;
+  --primary-dark: #145217;
+  --primary-light: #2d8a34;
+  --accent: #1a3a6b;
+  --dark: #f8f9fb;
+  --dark2: #f0f2f5;
+  --dark3: #ffffff;
+  --mid: #e0e8f0;
+  --light: #1a3a6b;
+  --text: #2d3748;
+  --text-muted: #556070;
+  --white: #1a2a3a;
+  --border: rgba(26,94,31,0.2);
+  --shadow: 0 20px 60px rgba(0,0,0,0.1);
+  --gradient: linear-gradient(135deg, #1a5e1f 0%, #2d8a34 50%, #145217 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Lato',sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden;}
+.page{display:none;min-height:100vh;animation:fadeIn 0.4s ease;}
+.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+/* HEADER */
+header{background:rgba(255,255,255,0.97);border-bottom:2px solid var(--primary);position:sticky;top:0;z-index:1000;backdrop-filter:blur(10px);}
+.header-top{background:#e8f5e9;padding:6px 0;font-size:12px;color:var(--text-muted);}
+.header-top .container{display:flex;justify-content:space-between;align-items:center;}
+.header-top a{color:var(--primary);text-decoration:none;}
+.header-main{padding:12px 0;}
+.header-main .container{display:flex;justify-content:space-between;align-items:center;}
+.logo{display:flex;align-items:center;gap:14px;cursor:pointer;}
+.logo-icon{width:54px;height:54px;background:var(--gradient);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:22px;font-weight:700;color:var(--dark);letter-spacing:1px;}
+.logo-text{font-family:'Oswald',sans-serif;}
+.logo-text .brand{font-size:20px;font-weight:600;color:var(--white);letter-spacing:1px;line-height:1.1;}
+.logo-text .sub{font-size:11px;color:var(--primary);letter-spacing:2px;text-transform:uppercase;}
+nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+nav a{color:var(--text);text-decoration:none;padding:8px 12px;font-size:13px;font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;transition:all 0.2s;border-radius:4px;cursor:pointer;}
+nav a:hover,nav a.active{color:var(--primary);background:rgba(184,134,11,0.1);}
+.btn-inquiry{background:var(--gradient);color:var(--dark)!important;padding:9px 20px!important;border-radius:4px;font-weight:700!important;}
+.btn-inquiry:hover{opacity:0.9;background:var(--gradient)!important;}
+.container{max-width:1200px;margin:0 auto;padding:0 20px;}
+
+/* HERO */
+.hero{min-height:88vh;background:linear-gradient(rgba(248,249,251,0.85),rgba(240,242,245,0.9)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600') center/cover;display:flex;align-items:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(26,94,31,0.03) 60px,rgba(26,94,31,0.03) 61px),repeating-linear-gradient(0deg,transparent,transparent 60px,rgba(26,94,31,0.03) 60px,rgba(26,94,31,0.03) 61px);}
+.hero-content{position:relative;z-index:2;}
+.hero-badge{display:inline-block;background:rgba(184,134,11,0.15);border:1px solid var(--primary);color:var(--primary);padding:6px 16px;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-family:'Rajdhani',sans-serif;font-weight:600;margin-bottom:20px;border-radius:2px;}
+.hero h1{font-family:'Oswald',sans-serif;font-size:clamp(36px,5vw,68px);font-weight:600;color:#1a2a3a;line-height:1.1;margin-bottom:12px;}
+.hero h1 span{color:var(--primary);}
+.hero .tagline{font-size:18px;color:var(--text-muted);margin-bottom:32px;font-weight:300;max-width:560px;line-height:1.6;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{padding:13px 30px;border-radius:4px;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border:none;transition:all 0.3s;text-decoration:none;display:inline-block;}
+.btn-primary{background:var(--gradient);color:var(--dark);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(184,134,11,0.4);}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.3);}
+.btn-outline:hover{border-color:var(--primary);color:var(--primary);}
+.hero-stats{display:flex;gap:50px;margin-top:52px;flex-wrap:wrap;}
+.hero-stat .num{font-family:'Oswald',sans-serif;font-size:36px;font-weight:600;color:var(--primary);}
+.hero-stat .label{font-size:12px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;}
+
+/* SECTIONS */
+section{padding:80px 0;}
+.section-label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--primary);font-family:'Rajdhani',sans-serif;font-weight:600;margin-bottom:10px;}
+.section-title{font-family:'Oswald',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:500;color:var(--white);margin-bottom:16px;line-height:1.2;}
+.section-title span{color:var(--primary);}
+.section-desc{color:var(--text-muted);max-width:600px;line-height:1.8;font-size:15px;}
+.section-head{margin-bottom:50px;}
+.section-head.center{text-align:center;}
+.section-head.center .section-desc{margin:0 auto;}
+.divider{width:60px;height:3px;background:var(--gradient);margin:16px 0;border-radius:2px;}
+.divider.center{margin:16px auto;}
+
+/* FEATURES STRIP */
+.features-strip{background:var(--dark3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:0;}
+.features-strip .container{display:grid;grid-template-columns:repeat(4,1fr);divide-x:1px solid var(--border);}
+.feature-item{padding:28px 24px;display:flex;align-items:center;gap:16px;border-right:1px solid var(--border);}
+.feature-item:last-child{border-right:none;}
+.feature-icon{font-size:32px;}
+.feature-item h4{font-family:'Rajdhani',sans-serif;font-size:15px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:0.5px;}
+.feature-item p{font-size:12px;color:var(--text-muted);}
+
+/* ABOUT SECTION */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about-img{position:relative;}
+.about-img-main{width:100%;height:420px;object-fit:cover;border-radius:8px;border:2px solid var(--border);}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--gradient);padding:24px;border-radius:8px;text-align:center;}
+.about-badge .num{font-family:'Oswald',sans-serif;font-size:36px;font-weight:700;color:var(--dark);line-height:1;}
+.about-badge .txt{font-size:11px;color:var(--dark);font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+.about-text p{color:var(--text-muted);line-height:1.9;margin-bottom:16px;font-size:15px;}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px;}
+.highlight-item{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text);}
+.highlight-item::before{content:'✓';width:22px;height:22px;background:rgba(184,134,11,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:12px;flex-shrink:0;}
+
+/* PRODUCT CATEGORIES */
+.cats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.cat-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:all 0.3s;cursor:pointer;position:relative;}
+.cat-card:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.4);}
+.cat-card-img{height:80px;background:var(--mid);display:flex;align-items:center;justify-content:center;font-size:40px;position:relative;overflow:hidden;}
+.cat-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 60%,rgba(10,14,26,0.8));}
+.cat-card-body{padding:18px;}
+.cat-card h3{font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:4px;}
+.cat-card p{font-size:12px;color:var(--text-muted);}
+.cat-card .view-link{display:inline-flex;align-items:center;gap:4px;color:var(--primary);font-size:12px;margin-top:10px;font-family:'Rajdhani',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;}
+
+/* PRODUCT PAGES */
+.product-hero{background:linear-gradient(rgba(248,249,251,0.88),rgba(240,242,245,0.88)),url('https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1200') center/cover;padding:60px 0;border-bottom:1px solid var(--border);}
+.product-hero h1{font-family:'Oswald',sans-serif;font-size:40px;color:var(--white);font-weight:500;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);margin-bottom:12px;}
+.breadcrumb span{color:var(--primary);cursor:pointer;}
+.breadcrumb span:hover{text-decoration:underline;}
+.products-layout{display:grid;grid-template-columns:260px 1fr;gap:30px;padding:50px 0;}
+.sidebar{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:24px;height:fit-content;position:sticky;top:100px;}
+.sidebar h3{font-family:'Rajdhani',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--primary);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.sidebar ul{list-style:none;}
+.sidebar ul li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);cursor:pointer;}
+.sidebar ul li a{color:var(--text-muted);font-size:13px;text-decoration:none;transition:color 0.2s;display:block;}
+.sidebar ul li a:hover,.sidebar ul li a.active{color:var(--primary);}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.product-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;overflow:hidden;cursor:pointer;transition:all 0.3s;}
+.product-card:hover{border-color:var(--primary);transform:translateY(-3px);}
+.product-card-img{height:80px;background:var(--mid);display:flex;align-items:center;justify-content:center;font-size:40px;}
+.product-card-body{padding:16px;}
+.product-card h3{font-family:'Rajdhani',sans-serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.product-card p{font-size:12px;color:var(--text-muted);line-height:1.6;}
+.product-card .btn{margin-top:12px;width:100%;text-align:center;font-size:13px;padding:9px;}
+
+/* SINGLE PRODUCT */
+.single-product{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:60px 0;}
+.product-img-wrap{background:var(--dark3);border:1px solid var(--border);border-radius:8px;height:120px;display:flex;align-items:center;justify-content:center;font-size:60px;}
+.product-info h1{font-family:'Oswald',sans-serif;font-size:36px;color:var(--white);font-weight:500;margin-bottom:12px;}
+.product-info .sku{font-size:12px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.product-info p{color:var(--text-muted);line-height:1.8;font-size:14px;margin-bottom:20px;}
+.spec-table{width:100%;border-collapse:collapse;margin:20px 0;}
+.spec-table tr{border-bottom:1px solid var(--border);}
+.spec-table td{padding:10px 12px;font-size:13px;}
+.spec-table td:first-child{color:var(--text-muted);width:40%;background:rgba(255,255,255,0.02);}
+.spec-table td:last-child{color:var(--white);}
+
+/* STATS */
+.stats-section{background:var(--dark3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;}
+.stat-item{padding:50px 20px;border-right:1px solid var(--border);}
+.stat-item:last-child{border-right:none;}
+.stat-num{font-family:'Oswald',sans-serif;font-size:52px;font-weight:600;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+.stat-plus{font-size:28px;}
+.stat-label{font-size:12px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-top:8px;}
+
+/* INDUSTRIES */
+.industries-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.industry-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:30px;transition:all 0.3s;cursor:pointer;position:relative;overflow:hidden;}
+.industry-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gradient);}
+.industry-card:hover{border-color:var(--primary);transform:translateX(4px);}
+.industry-card .icon{font-size:36px;margin-bottom:14px;}
+.industry-card h3{font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:8px;}
+.industry-card p{font-size:13px;color:var(--text-muted);line-height:1.7;}
+
+/* CLIENTS */
+.clients-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;align-items:center;}
+.client-logo{background:var(--dark3);border:1px solid var(--border);border-radius:6px;padding:16px;text-align:center;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:13px;color:var(--text-muted);letter-spacing:0.5px;transition:all 0.2s;}
+.client-logo:hover{border-color:var(--primary);color:var(--primary);}
+
+/* TESTIMONIALS */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.testimonial-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:28px;position:relative;}
+.testimonial-card::before{content:'"';font-family:'Oswald',sans-serif;font-size:80px;color:var(--primary);opacity:0.2;position:absolute;top:10px;left:20px;line-height:1;}
+.testimonial-card p{font-size:14px;color:var(--text);line-height:1.8;margin-bottom:16px;position:relative;z-index:1;}
+.testimonial-author{display:flex;align-items:center;gap:12px;}
+.author-avatar{width:40px;height:40px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-weight:600;color:var(--dark);font-size:16px;}
+.author-info .name{font-family:'Rajdhani',sans-serif;font-weight:700;color:var(--white);font-size:14px;}
+.author-info .role{font-size:11px;color:var(--text-muted);}
+.stars{color:var(--primary);font-size:12px;margin-bottom:8px;}
+
+/* CERTS */
+.certs-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+.cert-item{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:20px 12px;text-align:center;}
+.cert-item .cert-icon{font-size:32px;margin-bottom:8px;}
+.cert-item p{font-size:11px;color:var(--text-muted);letter-spacing:0.5px;}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;}
+.contact-info h2{font-family:'Oswald',sans-serif;font-size:32px;color:var(--white);margin-bottom:20px;}
+.contact-detail{display:flex;gap:14px;margin-bottom:20px;}
+.contact-detail .icon{width:44px;height:44px;background:rgba(184,134,11,0.1);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.contact-detail h4{font-family:'Rajdhani',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:4px;}
+.contact-detail p,.contact-detail a{font-size:14px;color:var(--text);text-decoration:none;}
+.contact-form{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:32px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{margin-bottom:18px;}
+.form-group label{display:block;font-size:12px;font-family:'Rajdhani',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px;}
+.form-group input,.form-group textarea,.form-group select{width:100%;background:var(--dark2);border:1px solid var(--border);border-radius:4px;padding:11px 14px;color:var(--text);font-size:14px;font-family:'Lato',sans-serif;transition:border 0.2s;}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--primary);}
+.form-group textarea{height:110px;resize:vertical;}
+.form-group select option{background:var(--dark2);}
+
+/* FOOTER */
+footer{background:var(--dark2);border-top:2px solid var(--primary);padding:60px 0 0;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:50px;}
+.footer-brand .logo{margin-bottom:16px;}
+.footer-brand p{font-size:13px;color:var(--text-muted);line-height:1.8;margin-bottom:20px;}
+.social-links{display:flex;gap:10px;}
+.social-btn{width:36px;height:36px;background:rgba(184,134,11,0.1);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;transition:all 0.2s;}
+.social-btn:hover{background:var(--primary);border-color:var(--primary);}
+.footer-col h4{font-family:'Rajdhani',sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--white);margin-bottom:18px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:8px;}
+.footer-col ul li a{font-size:13px;color:var(--text-muted);text-decoration:none;cursor:pointer;transition:color 0.2s;}
+.footer-col ul li a:hover{color:var(--primary);}
+.footer-col p{font-size:13px;color:var(--text-muted);line-height:1.8;margin-bottom:8px;}
+.footer-bottom{background:rgba(0,0,0,0.3);padding:18px 0;text-align:center;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border);}
+
+/* ABOUT PAGE */
+.about-page-hero{background:linear-gradient(rgba(248,249,251,0.88),rgba(240,242,245,0.88)),url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200') center/cover;padding:80px 0;text-align:center;border-bottom:1px solid var(--border);}
+.about-page-hero h1{font-family:'Oswald',sans-serif;font-size:52px;color:var(--white);font-weight:500;}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.team-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;overflow:hidden;text-align:center;transition:all 0.3s;}
+.team-card:hover{border-color:var(--primary);}
+.team-card-img{height:180px;background:linear-gradient(135deg,var(--mid),var(--dark3));display:flex;align-items:center;justify-content:center;font-size:60px;}
+.team-card-body{padding:16px;}
+.team-card h3{font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;color:var(--white);}
+.team-card p{font-size:12px;color:var(--primary);}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.value-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:30px;text-align:center;}
+.value-card .icon{font-size:40px;margin-bottom:16px;}
+.value-card h3{font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:10px;}
+.value-card p{font-size:13px;color:var(--text-muted);line-height:1.7;}
+
+/* CAREER */
+.job-card{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:24px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;transition:all 0.3s;}
+.job-card:hover{border-color:var(--primary);}
+.job-info h3{font-family:'Rajdhani',sans-serif;font-size:18px;font-weight:700;color:var(--white);}
+.job-info .tags{display:flex;gap:8px;margin-top:8px;}
+.job-tag{background:rgba(184,134,11,0.1);border:1px solid var(--border);color:var(--primary);padding:3px 10px;border-radius:20px;font-size:11px;font-family:'Rajdhani',sans-serif;font-weight:600;}
+
+/* INQUIRY */
+.inquiry-page{max-width:800px;margin:0 auto;padding:60px 20px;}
+.inquiry-page h1{font-family:'Oswald',sans-serif;font-size:40px;color:var(--white);margin-bottom:8px;}
+
+/* MOBILE */
+.hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:6px;}
+.hamburger span{width:24px;height:2px;background:var(--primary);border-radius:2px;}
+@media(max-width:768px){
+  .cats-grid{grid-template-columns:repeat(2,1fr);}
+  .about-grid,.contact-grid,.single-product{grid-template-columns:1fr;}
+  .products-layout{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .products-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .stats-grid,.certs-grid,.clients-grid{grid-template-columns:repeat(2,1fr);}
+  .features-strip .container{grid-template-columns:1fr 1fr;}
+  .industries-grid{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:repeat(2,1fr);}
+  nav{display:none;}
+  nav.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:#f8f9fb;z-index:9999;align-items:center;justify-content:center;gap:12px;}
+  nav.open a{font-size:20px;}
+  .hamburger{display:flex;}
+  .hero-stats{gap:24px;}
+  .testimonials-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+}
+
+/* TABS */
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:30px;}
+.tab{padding:12px 24px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);border-bottom:3px solid transparent;margin-bottom:-1px;transition:all 0.2s;}
+.tab.active,.tab:hover{color:var(--primary);border-bottom-color:var(--primary);}
+
+/* INFO BOXES */
+.info-box{background:rgba(184,134,11,0.05);border:1px solid var(--border);border-left:4px solid var(--primary);border-radius:4px;padding:18px 20px;margin:20px 0;font-size:14px;color:var(--text);line-height:1.7;}
+.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;}
+.tag{background:rgba(184,134,11,0.1);border:1px solid rgba(184,134,11,0.3);color:var(--primary-light);padding:4px 12px;border-radius:20px;font-size:12px;font-family:'Rajdhani',sans-serif;font-weight:600;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="container">
+      <span>📧 <a href="/cdn-cgi/l/email-protection#1360727f766053607b61766a72766b6776707b3d707c7e"><span class="__cf_email__" data-cfemail="384b59545d4b784b504a5d41595d404c5d5b50165b5755">[email&#160;protected]</span></a> &nbsp;|&nbsp; 📞 08048953911 &nbsp;|&nbsp; Block No. 700, Manjusar–Savli Road, Manjusar, Vadodara – 391775, Gujarat, India</span>
+      <span>GST No. 24AAJCS6820J1Z6 </span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <div class="logo" onclick="navigate('home')">
+        <img src="data:image/jpeg;base64,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" style="width:54px;height:54px;object-fit:contain;border-radius:4px;" alt="SEPL Logo">
+        <div class="logo-text">
+          <div class="brand">Shreya Ex-Tech Private Limited</div>
+          <div class="sub">Flameproof Lighting & Switchgear Manufacturer</div>
+        </div>
+      </div>
+      <nav id="mainNav">
+        <a onclick="navigate('home')">Home</a>
+        <a onclick="navigate('about')">About</a>
+        <a onclick="navigate('products')">Products</a>
+        <a onclick="navigate('industries')">Industries</a>
+        <a onclick="navigate('clients')">Clients</a>
+        <a onclick="navigate('career')">Career</a>
+        <a onclick="navigate('contact')">Contact</a>
+        <a onclick="navigate('inquiry')" class="btn-inquiry">Inquiry Now</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<!-- =================== HOME PAGE =================== -->
+<div class="page active" id="page-home">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">🏭 Manufacturer, Exporter & Supplier Since 2006</div>
+      <h1>Shreya Ex-Tech Private Limited<br><span>Flameproof Lighting</span><br>& Switchgear</h1>
+      <p class="tagline">Leading manufacturer, exporter & supplier of Well Glass Light Fittings, Flameproof Electrical Switchgears, Clean Room Fittings and more — from Vadodara, Gujarat. Exporting Globally.</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary" onclick="navigate('products')">Explore Products</button>
+        <button class="btn btn-outline" onclick="navigate('inquiry')">Request Inquiry</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">18+</div><div class="label">Years Experience</div></div>
+        <div class="hero-stat"><div class="num">100+</div><div class="label">Products</div></div>
+        <div class="hero-stat"><div class="num">Global</div><div class="label">Export Reach</div></div>
+        <div class="hero-stat"><div class="num">Global</div><div class="label">Export Reach</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES STRIP -->
+  <div class="features-strip">
+    <div class="container">
+      <div class="feature-item"><span class="feature-icon">🏆</span><div><h4>High Quality Products</h4><p>International Quality Standards</p></div></div>
+      <div class="feature-item"><span class="feature-icon">💰</span><div><h4>Market Leading Prices</h4><p>Best value, competitive rates</p></div></div>
+      <div class="feature-item"><span class="feature-icon">🌍</span><div><h4>Global Exports</h4><p>Exporting to countries worldwide</p></div></div>
+      <div class="feature-item"><span class="feature-icon">📞</span><div><h4>Fast, Dedicated Support</h4><p>Fast, dedicated customer support</p></div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section style="background:var(--dark2);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <div style="width:100%;height:420px;background:linear-gradient(135deg,var(--dark3),var(--mid));border-radius:8px;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:100px;">🏭</div>
+          <div class="about-badge"><div class="num">20</div><div class="txt">Years of<br>Excellence</div></div>
+        </div>
+        <div class="about-text">
+          <div class="section-label">About Shreya Ex-Tech Private Limited</div>
+          <h2 class="section-title">Vadodara's Trusted <span>Flameproof Equipment</span> Manufacturer</h2>
+          <div class="divider"></div>
+          <p>Incepted in the year 2006, Shreya Ex-Tech Private Limited is known to be amongst the leading manufacturers, exporters and suppliers of Well Glass Light Fitting, Flameproof Light Fitting, Flameproof Electrical Switchgears and many more. Our manufacturing is commenced as per the norms and guidelines of the industry, utilizing the finest raw materials and modern machines.</p>
+          <p>Based at Block No. 700, Manjusar–Savli Road, Manjusar, Vadodara, Gujarat, we specialize in FLP Light Fitting, Electrical Switchgear and Flameproof Clean Room Light Fitting. SEPL is committed to be a leading manufacturer of Flameproof & Weatherproof Electrical Products for use in hazardous or harsh environments within the process industries.</p>
+          <p>Under the supervision of our Directors — Mr. B. Panigrahi, Mr. Vrajesh Shukla, and Mr. Vatsal Shukla — we have managed to attain greater heights of success. Our highly ethical work practices have helped us generate a huge client base globally.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">Est. 2006, Manjusar, Vadodara</div>
+            <div class="highlight-item">Global Exporter</div>
+            <div class="highlight-item">GST: 24AAJCS6820J1Z6</div>
+            <div class="highlight-item">IEC: 3408005702</div>
+            <div class="highlight-item">Annual Turnover ₹25–100 Cr</div>
+            <div class="highlight-item">Limited Company</div>
+            <div class="highlight-item">TrustSEAL Verified</div>
+            <div class="highlight-item">Fast, Dedicated Support</div>
+          </div>
+          <br>
+          <button class="btn btn-primary" onclick="navigate('about')">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <div class="section-label">What We Make</div>
+        <h2 class="section-title">Our <span>Product Range</span></h2>
+        <div class="divider center"></div>
+        <p class="section-desc">Comprehensive range of flameproof and explosion-proof equipment engineered for hazardous environments across industries.</p>
+      </div>
+      <div class="cats-grid">
+        <div class="cat-card" onclick="navigate('cat-junction')"><div class="cat-card-img">🔧</div><div class="cat-card-body"><h3>Junction &amp; Push Box</h3><p>Heavy-duty flameproof enclosures housing limit switches, socket MCBs and multi-way junction terminals for complete hazardous-area wiring systems.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-openable')"><div class="cat-card-img">💡</div><div class="cat-card-body"><h3>Openable LED Light Fitting</h3><p>Tool-free bottom and top openable rectangular LED fittings engineered for easy lamp servicing in explosion-prone clean-room and process zones.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-luminaries')"><div class="cat-card-img">🌻</div><div class="cat-card-body"><h3>Well Glass Light Fitting</h3><p>Robust die-cast aluminium well-glass luminaires delivering energy-efficient LED illumination across Zone I and Zone II hazardous locations.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-switchgear')"><div class="cat-card-img">⚡</div><div class="cat-card-body"><h3>Flameproof Electrical Switchgears</h3><p>Certified switchgear range covering socket outlets, MCB enclosures, push-button stations and electronic hooters built for explosive atmospheres.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-panels')"><div class="cat-card-img">🖥️</div><div class="cat-card-body"><h3>Control Panel</h3><p>Engineered flameproof control and distribution panels incorporating motor starters, MCCBs and busbars tailored to client process requirements.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-rotary')"><div class="cat-card-img">🔁</div><div class="cat-card-body"><h3>Rotary Switches</h3><p>Precision-engineered flameproof rotary selector switches for safe circuit isolation and equipment control within classified hazardous zones.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-flpwp')"><div class="cat-card-img">🛡️</div><div class="cat-card-body"><h3>FLP-WP Switchgear</h3><p>Dual-rated flameproof and weatherproof switchgear offering maximum protection in outdoor and corrosive industrial environments.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-cablegland')"><div class="cat-card-img">🔩</div><div class="cat-card-body"><h3>Cable Gland &amp; Stopper</h3><p>High-integrity brass and stainless-steel cable glands and blanking stoppers providing gas-tight sealing for all FLP and WP enclosures.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-cleanroom')"><div class="cat-card-img">🏥</div><div class="cat-card-body"><h3>Flameproof Clean Room Fitting</h3><p>GMP-compliant flameproof clean-room light fittings manufactured for pharmaceutical, biotech and food-grade hazardous area applications.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-reactor')"><div class="cat-card-img">⚗️</div><div class="cat-card-body"><h3>Reactor Vessel Lamp</h3><p>Specially designed flameproof and weatherproof lamps built to safely illuminate the interiors of chemical and pharmaceutical reactor vessels.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-exhaust')"><div class="cat-card-img">💨</div><div class="cat-card-body"><h3>Exhaust Fan</h3><p>High-performance industrial exhaust fans available in standard, electric and fully flameproof variants for factory, plant and process ventilation needs.</p><div class="view-link">View All →</div></div></div>
+        <div class="cat-card" onclick="navigate('cat-misc')"><div class="cat-card-img">📞</div><div class="cat-card-body"><h3>Telephone &amp; Miscellaneous</h3><p>Complementary flameproof accessories including corded telephones, rechargeable safety torches and digital clocks designed for hazardous locations.</p><div class="view-link">View All →</div></div></div>
+      </div>
+      <div style="text-align:center;margin-top:36px;"><button class="btn btn-primary" onclick="navigate('products')">View All Products</button></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="stat-num">100<span class="stat-plus">+</span></div><div class="stat-label">Products Portfolio</div></div>
+        <div class="stat-item"><div class="stat-num">500<span class="stat-plus">+</span></div><div class="stat-label">Happy Clients</div></div>
+        <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Expert Directors</div></div>
+        <div class="stat-item"><div class="stat-num">Global</div><div class="stat-label">Export Reach</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INDUSTRIES -->
+  <section style="background:var(--dark2);">
+    <div class="container">
+      <div class="section-head center">
+        <div class="section-label">Sectors We Serve</div>
+        <h2 class="section-title">Industries We <span>Cater To</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">🏭</div><h3>Chemical Industry</h3><p>Explosion-proof equipment for chemical processing plants with hazardous area classification Zone 1 & Zone 2.</p></div>
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">⛽</div><h3>Oil & Gas</h3><p>Certified flameproof fittings and panels for upstream, midstream, and downstream oil & gas facilities.</p></div>
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">💊</div><h3>Pharmaceutical</h3><p>Clean room fittings and GMP-compliant flameproof equipment for pharmaceutical manufacturing.</p></div>
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">🌾</div><h3>Fertilizer Plants</h3><p>Robust explosion-proof solutions for ammonia and fertilizer manufacturing environments.</p></div>
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">🔬</div><h3>Refineries</h3><p>High-performance flameproof equipment meeting IS, IEC,and IECEx standards for refinery applications.</p></div>
+        <div class="industry-card" onclick="navigate('industries')"><div class="icon">⚗️</div><h3>Paint & Coatings</h3><p>Explosion-proof lighting and electrical equipment for paint manufacturing and storage facilities.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <div class="section-label">Who Trusts Us</div>
+        <h2 class="section-title">Our Valued <span>Clients</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="clients-grid">
+        <div class="client-logo">🛢️ Indian Oil</div>
+        <div class="client-logo">⛽ BPCL</div>
+        <div class="client-logo">🏭 ONGC</div>
+        <div class="client-logo">🔬 OPAL</div>
+        <div class="client-logo">🌊 Petronet LNG</div>
+        <div class="client-logo">⚡ EESL</div>
+        <div class="client-logo">🌿 Dabur</div>
+        <div class="client-logo">💊 IPCA Labs</div>
+        <div class="client-logo">🏥 Jubilant</div>
+        <div class="client-logo">🎨 Berger Paints</div>
+        <div class="client-logo">☀️ Sun Pharma</div>
+        <div class="client-logo">🔧 Aditya Birla</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section style="background:var(--dark2);">
+    <div class="container">
+      <div class="section-head center">
+        <div class="section-label">Client Feedback</div>
+        <h2 class="section-title">What Our Clients <span>Say</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>Shreya Ex-Tech Private Limited has been our trusted supplier for flameproof equipment for over 8 years. Quality is consistently excellent and delivery is always on time.</p><div class="testimonial-author"><div class="author-avatar">R</div><div class="author-info"><div class="name">Ravi Kumar</div><div class="role">Plant Manager, Chemical Plant, Gujarat</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>We've used their FLP distribution boxes across multiple refineries. Never a complaint. Excellent build quality and all certifications in place.</p><div class="testimonial-author"><div class="author-avatar">A</div><div class="author-info"><div class="name">Alpesh Patel</div><div class="role">Purchase Head, Oil Refinery, Rajkot</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>Their clean room fittings meet every pharma GMP requirement. Highly recommend Shreya Ex-Tech Private Limited for pharmaceutical industry equipment needs.</p><div class="testimonial-author"><div class="author-avatar">P</div><div class="author-info"><div class="name">Pallavi Shah</div><div class="role">Quality Manager, Pharma Company, Baroda</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <div class="container">
+      <div class="section-head center">
+        <div class="section-label">Our Credentials</div>
+        <h2 class="section-title">Certifications & <span>Memberships</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-item"><div class="cert-icon">🏅</div><p>BIS / ISI Mark</p></div>
+        <div class="cert-item"><div class="cert-icon">🌐</div><p>ISO 9001:2015</p></div>
+        <div class="cert-item"><div class="cert-icon">🔬</div><p>CIMFR Dhanbad</p></div>
+        <div class="cert-item"><div class="cert-icon">⚡</div><p>IEC Standards</p></div>
+        
+        <div class="cert-item"><div class="cert-icon">🌍</div><p>IECEx Approved</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg,var(--dark3),var(--mid));border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center;">
+    <div class="container">
+      <h2 class="section-title">Ready to Partner with <span>Shreya Ex-Tech Private Limited?</span></h2>
+      <p style="color:var(--text-muted);margin-bottom:30px;font-size:15px;">Contact us for custom solutions, bulk orders, or technical inquiries. Our team is ready to assist you.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn btn-primary" onclick="navigate('inquiry')">Request Inquiry</button>
+        <button class="btn btn-outline" onclick="navigate('contact')">Contact Us</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =================== ABOUT PAGE =================== -->
+<div class="page" id="page-about">
+  <div class="about-page-hero">
+    <div class="container">
+      <div class="section-label">Our Story</div>
+      <h1 class="section-title" style="font-size:52px;">About <span>Shreya Ex-Tech Private Limited</span></h1>
+      <div class="divider center"></div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">18+ Years of <span>Flameproof Excellence</span></h2>
+          <div class="divider"></div>
+          <p>Incepted in the year 2006, Shreya Ex-Tech Private Limited is known to be amongst the leading manufacturers, exporters and suppliers of Well Glass Light Fitting, Flameproof Light Fitting, Flameproof Electrical Switchgears and many more. Our range's manufacturing is commenced as per the norms and guidelines of the industry, utilizing the finest raw materials and modern machines.</p>
+          <p>Under the supervision of our highly skilled and experienced Directors — Mr. B. Panigrahi, Mr. Vrajesh Shukla, and Mr. Vatsal Shukla — we have managed to attain greater heights of success. Their ability to understand the market, analyze changes and managerial skills have been nothing less than a boon to us. SEPL is committed to be a leading manufacturer of Flameproof & Weatherproof Electrical Products for use in hazardous or harsh environments within the process industries.</p>
+          <p>The state-of-the-art infrastructural facility at Shreya Ex-tech Pvt. Ltd. has been equipped with all the necessary machinery and equipment, which facilitates attainment of several predefined goals and targets. The facility undergoes regular up-gradation to maximize our reach in the market. We export our products Globally.</p>
+        </div>
+        <div style="background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:36px;">
+          <h3 style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:24px;">Company Highlights</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">Established</span><span style="color:var(--white);font-weight:700;">2006</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">Location</span><span style="color:var(--white);font-weight:700;">Manjusar, Vadodara, Gujarat</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">Directors</span><span style="color:var(--white);font-weight:700;">B. Panigrahi, Vrajesh Shukla &amp; Vatsal Shukla</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">Nature of Business</span><span style="color:var(--white);font-weight:700;">Manufacturer & Exporter</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">Legal Status</span><span style="color:var(--white);font-weight:700;">Private Limited Company</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">GST No.</span><span style="color:var(--white);font-weight:700;">24AAJCS6820J1Z6</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);"><span style="color:var(--text-muted);font-size:14px;">IEC Code</span><span style="color:var(--white);font-weight:700;">3408005702</span></div>
+            <div style="display:flex;justify-content:space-between;padding:12px 0;"><span style="color:var(--text-muted);font-size:14px;">Annual Turnover</span><span style="color:var(--primary);font-weight:700;">₹ 25 – 100 Crore</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background:var(--dark2);">
+    <div class="container">
+      <div class="section-head center"><div class="section-label">Our Principles</div><h2 class="section-title">Core <span>Values</span></h2><div class="divider center"></div></div>
+      <div class="values-grid">
+        <div class="value-card"><div class="icon">🛡️</div><h3>Safety First</h3><p>Every product is designed and tested to ensure maximum safety in hazardous environments. We never compromise on safety standards.</p></div>
+        <div class="value-card"><div class="icon">🎯</div><h3>Quality Excellence</h3><p>Stringent quality control at every production stage. All products are tested before dispatch with full documentation.</p></div>
+        <div class="value-card"><div class="icon">💡</div><h3>Innovation</h3><p>Continuous R&D to develop better, more efficient flameproof solutions that meet evolving industry needs.</p></div>
+        <div class="value-card"><div class="icon">🤝</div><h3>Client Partnership</h3><p>We build long-term relationships with our clients by providing consistent quality, support, and tailored solutions.</p></div>
+        <div class="value-card"><div class="icon">🌱</div><h3>Sustainability</h3><p>Eco-friendly manufacturing practices and energy-efficient product designs for a sustainable future.</p></div>
+        <div class="value-card"><div class="icon">⏱️</div><h3>Timely Delivery</h3><p>We understand industrial schedules. Our production planning ensures on-time delivery every time.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="section-head center"><div class="section-label">Leadership</div><h2 class="section-title">Our <span>Team</span></h2><div class="divider center"></div></div>
+      <div class="team-grid">
+        <div class="team-card"><div class="team-card-img">👨‍💼</div><div class="team-card-body"><h3>Mr. B. Panigrahi</h3><p>Director</p></div></div>
+        <div class="team-card"><div class="team-card-img">👨‍💻</div><div class="team-card-body"><h3>Mr. Vatsal Shukla</h3><p>Director</p></div></div>
+        <div class="team-card"><div class="team-card-img">👨‍🔧</div><div class="team-card-body"><h3>Mr. Vrajesh Shukla</h3><p>Director</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- =================== PRODUCTS LISTING PAGE =================== -->
+<div class="page" id="page-products">
+  <div class="product-hero">
+    <div class="container">
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> › All Products</div>
+      <h1>All Products</h1>
+      <p style="color:var(--text-muted);margin-top:8px;">Explore our complete range of flameproof & explosion-proof equipment</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="products-layout">
+      <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li><a onclick="navigate('cat-junction')">Junction & Push Box</a></li>
+          <li><a onclick="navigate('cat-openable')">Openable LED Light Fitting</a></li>
+          <li><a onclick="navigate('cat-luminaries')" class="active">Well Glass Light Fitting</a></li>
+          <li><a onclick="navigate('cat-switchgear')">Flameproof Electrical Switchgears</a></li>
+          <li><a onclick="navigate('cat-panels')">Control Panel</a></li>
+          <li><a onclick="navigate('cat-rotary')">Rotary Switches</a></li>
+          <li><a onclick="navigate('cat-flpwp')">FLP-WP Switchgear</a></li>
+          <li><a onclick="navigate('cat-cablegland')">Cable Gland & Stopper</a></li>
+          <li><a onclick="navigate('cat-cleanroom')">Flameproof Clean Room Fitting</a></li>
+          <li><a onclick="navigate('cat-reactor')">Reactor Vessel Lamp</a></li>
+          <li><a onclick="navigate('cat-exhaust')">Exhaust Fan</a></li>
+          <li><a onclick="navigate('cat-misc')">Telephone & Miscellaneous</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="products-grid">
+          <div class="product-card" onclick="navigate('prod-sunflower')"><div class="product-card-img">🌻</div><div class="product-card-body"><h3>SEPL Sunflower LED Light Fitting</h3><p>Iconic die-cast LM-6 aluminium sunflower-pattern wellglass luminaire certified for Zone I &amp; II, gas groups IIA and IIB hazardous areas.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-sunflower')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-flp-light')"><div class="product-card-img">💡</div><div class="product-card-body"><h3>SEPL Flameproof Well Glass LED Fitting</h3><p>Energy-efficient well-glass LED fitting in LM-6 aluminium housing with dual ¾″ ET entries, rated for Zone I &amp; II explosive environments.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-flp-light')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-openable')"><div class="product-card-img">🔆</div><div class="product-card-body"><h3>Bottom Openable Flameproof LED Fitting</h3><p>Rectangular 20 W flameproof LED fitting with bottom-opening access panel — ideal for clean-room and hazardous process-area installations.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-openable')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-floodlight')"><div class="product-card-img">🔦</div><div class="product-card-body"><h3>Flameproof Flood Light Fitting</h3><p>Heavy-duty flood luminaire fabricated from premium-grade metals, delivering broad-beam illumination in outdoor Zone II hazardous locations.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-floodlight')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-plug')"><div class="product-card-img">🔋</div><div class="product-card-body"><h3>Flameproof Switch Socket &amp; Plug Top</h3><p>Certified flameproof switch socket with integrated MCB over-current protection and matching plug top for safe Zone I &amp; II power connectivity.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-plug')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-pushbutton')"><div class="product-card-img">🔴</div><div class="product-card-body"><h3>Flameproof Push Button Station</h3><p>Robust LM-6 aluminium push-button stations in single-phase and multi-element configurations for motor start, stop and emergency-stop control in hazardous zones.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-pushbutton')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-junction')"><div class="product-card-img">🔧</div><div class="product-card-body"><h3>Flameproof 4-Way Junction Box</h3><p>LM-6 aluminium alloy junction box with four-way terminal block, synthetic rubber gasket and epoxy-grey stove-enamel finish rated to IP65.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-junction')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-limit-switch')"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>10 A Flameproof Limit Switch</h3><p>SPDT/DPDT 10 A limit switch in a sealed GI or aluminium enclosure, certified for Zone I &amp; II hazardous-area position-sensing applications.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-limit-switch')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-hooter')"><div class="product-card-img">📢</div><div class="product-card-body"><h3>Flameproof Electronic Hooter &amp; Fire Alarm</h3><p>High-decibel flameproof electronic hooter and fire-alarm sounder with continuous/pulsating tone options for Zone II safety signalling systems.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-hooter')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-reactor')"><div class="product-card-img">⚗️</div><div class="product-card-body"><h3>Flameproof &amp; WP Reactor Vessel Lamp</h3><p>Purpose-built flameproof and weatherproof lamp designed to safely illuminate the interior of chemical and pharmaceutical reactor vessels.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-reactor')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-cleanroom')"><div class="product-card-img">🏥</div><div class="product-card-body"><h3>Flameproof Clean Room Light Fitting</h3><p>Fully sealed, pharma-grade flameproof and weatherproof clean-room luminaire compliant with GMP standards for pharmaceutical hazardous area zones.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-cleanroom')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-tubelight')"><div class="product-card-img">💫</div><div class="product-card-body"><h3>Flameproof Tube Light Fitting</h3><p>36 W IP65-rated flameproof tube light fitting suitable for Zone II industrial environments — available in fluorescent and LED-tube variants.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-tubelight')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-rotary')"><div class="product-card-img">🔁</div><div class="product-card-body"><h3>Flameproof Rotary Switch</h3><p>LM-6 aluminium flameproof rotary selector switch for safe multi-position circuit control and equipment isolation in Zone I &amp; II classified areas.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-rotary')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-torch')"><div class="product-card-img">🔦</div><div class="product-card-body"><h3>Flameproof Rechargeable Safety Torch</h3><p>Portable, rechargeable LED safety torch engineered for flameproof Zone I &amp; II use — an essential personal safety tool for plant operators.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-torch')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-exhaust')"><div class="product-card-img">💨</div><div class="product-card-body"><h3>Industrial Flameproof Exhaust Fan</h3><p>300 W heavy-duty industrial exhaust fan available in standard, electric and fully flameproof variants for effective factory and process-area ventilation.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-exhaust')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-cablegland')"><div class="product-card-img">🔩</div><div class="product-card-body"><h3>Flameproof Cable Gland &amp; Stopper</h3><p>Gas-tight brass and stainless-steel cable glands and blanking stoppers in all standard metric and NPT sizes for FLP and WP enclosure sealing.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-cablegland')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-panel')"><div class="product-card-img">🖥️</div><div class="product-card-body"><h3>Flameproof Control Panel &amp; Motor Starter</h3><p>Custom-built flameproof distribution and motor-starter control panels incorporating MCCBs, contactors and DOL/star-delta starters for hazardous process plants.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-panel')">View Details</button></div></div>
+          <div class="product-card" onclick="navigate('prod-telephone')"><div class="product-card-img">📞</div><div class="product-card-body"><h3>Flameproof Telephone Instrument</h3><p>Corded industrial telephone in a certified flameproof aluminium enclosure enabling reliable inter-plant communication within Zone II hazardous areas.</p><button class="btn btn-primary" onclick="event.stopPropagation();navigate('prod-telephone')">View Details</button></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =================== CATEGORY PAGES (Luminaries) =================== -->
+<div class="page" id="page-cat-luminaries">
+  <div class="product-hero">
+    <div class="container">
+      <div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Luminaries Products</div>
+      <h1>Luminaries Products</h1>
+      <p style="color:var(--text-muted);margin-top:8px;">Flameproof & weatherproof lighting for hazardous areas – 12 products</p>
+    </div>
+  </div>
+  <div class="container"><div class="products-layout">
+    <div class="sidebar"><h3>All Categories</h3><ul>
+      <li><a onclick="navigate('cat-luminaries')" class="active">Luminaries Products</a></li>
+      <li><a onclick="navigate('cat-switches')">Limit Switches</a></li>
+      <li><a onclick="navigate('cat-switchgear')">Switch Gears</a></li>
+      <li><a onclick="navigate('cat-panels')">Control Panels</a></li>
+      <li><a onclick="navigate('cat-distribution')">Distribution Box</a></li>
+      <li><a onclick="navigate('cat-junction')">Junction Box</a></li>
+      <li><a onclick="navigate('cat-pushbutton')">Push Button Station</a></li>
+      <li><a onclick="navigate('cat-plugsocket')">Plug & Socket</a></li>
+    </ul></div>
+    <div class="products-grid">
+      <div class="product-card" onclick="navigate('prod-flp-light')"><div class="product-card-img">💡</div><div class="product-card-body"><h3>Flameproof Well Glass LED Luminaire</h3><p>LM-6 aluminium alloy well-glass LED luminaire, Zone I &amp; II certified, available in multiple wattages for diverse industrial lighting requirements.</p><button class="btn btn-primary">View Details</button></div></div>
+      <div class="product-card"><div class="product-card-img">🔦</div><div class="product-card-body"><h3>Flameproof Fluorescent Batten Fitting</h3><p>2×18 W / 2×36 W IP65-rated flameproof batten fitting for long-throw corridor and tunnel lighting in Zone II hazardous locations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+      <div class="product-card"><div class="product-card-img">🏮</div><div class="product-card-body"><h3>Flameproof Bulkhead Light Fitting</h3><p>Cast-iron and GI bulkhead luminaires from 15 W to 100 W for robust Zone I wall and ceiling-mounted hazardous area lighting.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+      <div class="product-card"><div class="product-card-img">🔆</div><div class="product-card-body"><h3>Flameproof High-Mast LED Fitting</h3><p>High-output 100 W–500 W LED high-mast luminaire in IP66 enclosure for large outdoor Zone II plant areas requiring wide-area illumination.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+      <div class="product-card"><div class="product-card-img">🚨</div><div class="product-card-body"><h3>Flameproof Tower Warning Lamp</h3><p>Multi-colour red, amber and green tower warning lamp operating on 24 V DC or 220 V AC for process status indication in hazardous zones.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+      <div class="product-card"><div class="product-card-img">💫</div><div class="product-card-body"><h3>Weatherproof Street Light Fitting</h3><p>50 W–150 W IP67 corrosion-resistant weatherproof street lamp for perimeter roads, loading bays and outdoor process plant walkways.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    </div>
+  </div></div>
+</div>
+
+<!-- CATEGORY: SWITCH GEARS -->
+<div class="page" id="page-cat-switchgear">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Switch Gears</div><h1>Switch Gears</h1><p style="color:var(--text-muted);margin-top:8px;">Flameproof switch gears for hazardous locations – 10 products</p></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-switchgear')" class="active">Switch Gears</a></li><li><a onclick="navigate('cat-panels')">Control Panels</a></li><li><a onclick="navigate('cat-distribution')">Distribution Box</a></li><li><a onclick="navigate('cat-junction')">Junction Box</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-switchgear')"><div class="product-card-img">⚡</div><div class="product-card-body"><h3>Flameproof Isolator Switch</h3><p>16 A–200 A TP/TPN padlockable rotary isolator in certified flameproof cast-iron enclosure for safe electrical isolation in Zone I &amp; II areas.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>Flameproof MCB Enclosure</h3><p>2- to 12-way DIN-rail-mounted MCB enclosure in IP65 flameproof housing for overcurrent and short-circuit protection in hazardous process areas.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">⚙️</div><div class="product-card-body"><h3>Flameproof Contactor Enclosure</h3><p>9 A–400 A flameproof contactor box in AC1/AC3/AC4 duty for motor switching and load control inside Zone I &amp; II classified locations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔧</div><div class="product-card-body"><h3>Flameproof Motor Starter Box</h3><p>Direct-on-line and star-delta motor starter housed in a certified flameproof enclosure for safe motor control in Zone I hazardous environments.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: PANELS -->
+<div class="page" id="page-cat-panels">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Control Panels</div><h1>Control Panels</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-switchgear')">Switch Gears</a></li><li><a onclick="navigate('cat-panels')" class="active">Control Panels</a></li><li><a onclick="navigate('cat-distribution')">Distribution Box</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-panel')"><div class="product-card-img">🖥️</div><div class="product-card-body"><h3>Flameproof Motor Control Centre Panel</h3><p>Custom-engineered MCC panel in FLP enclosure with individually housed feeders for centralised motor control across Zone I &amp; II hazardous plant areas.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">📊</div><div class="product-card-body"><h3>Flameproof Power Control Centre Panel</h3><p>Bespoke PCC panel built in a flameproof enclosure, incorporating MCCB incomer, copper busbars and outgoing feeders for main power distribution.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🎛️</div><div class="product-card-body"><h3>Flameproof Marshalling Panel</h3><p>IP65 Zone II marshalling panel providing organised I/O termination between field instruments and the control system in hazardous process plants.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔍</div><div class="product-card-body"><h3>Flameproof Indication Panel</h3><p>Flameproof indication panel housing LED pilot lamps and push buttons for remote process status monitoring in Zone I &amp; II hazardous areas.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: DISTRIBUTION -->
+<div class="page" id="page-cat-distribution">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Distribution Box</div><h1>Distribution Box</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-panels')">Control Panels</a></li><li><a onclick="navigate('cat-distribution')" class="active">Distribution Box</a></li><li><a onclick="navigate('cat-junction')">Junction Box</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-distribution')"><div class="product-card-img">📦</div><div class="product-card-body"><h3>Flameproof 4-Way Distribution Board</h3><p>Four-way flameproof distribution board with MCCB incomer and MCB outgoing feeders rated 16 A–100 A for Zone I hazardous area power distribution.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">📫</div><div class="product-card-body"><h3>Flameproof 8-Way Distribution Board</h3><p>Eight-way IP65 flameproof DB with MCCB incomer for balanced three-phase power distribution in Zone I &amp; II chemical and petrochemical plants.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">📭</div><div class="product-card-body"><h3>Flameproof 12-Way Distribution Board</h3><p>Twelve-way GI-body flameproof distribution board with padlockable door for secure multi-circuit power distribution in hazardous area substations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: JUNCTION BOX -->
+<div class="page" id="page-cat-junction">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Junction Box</div><h1>Junction Box</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-panels')">Control Panels</a></li><li><a onclick="navigate('cat-distribution')">Distribution Box</a></li><li><a onclick="navigate('cat-junction')" class="active">Junction Box</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-junction')"><div class="product-card-img">🔧</div><div class="product-card-body"><h3>Flameproof Small Junction Box (4-Way)</h3><p>Compact GI body four-way junction box with M20/M25 entries and synthetic rubber gasket, certified for Zone I &amp; II cable-junction applications.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔩</div><div class="product-card-body"><h3>Flameproof Medium Junction Box (8-Way)</h3><p>Eight-way stainless-steel IP65 junction box with multi-entry options, providing a corrosion-resistant termination solution for Zone I &amp; II hazardous wiring.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🗜️</div><div class="product-card-body"><h3>Flameproof Large Junction Box (16-Way)</h3><p>GRP-bodied 16-way IP66 junction box with multiple conduit entries for large-scale cable-marshalling in Zone I &amp; II classified industrial locations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: PUSH BUTTON -->
+<div class="page" id="page-cat-pushbutton">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Push Button Station</div><h1>Push Button Station</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-panels')">Control Panels</a></li><li><a onclick="navigate('cat-pushbutton')" class="active">Push Button Station</a></li><li><a onclick="navigate('cat-plugsocket')">Plug & Socket</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-pushbutton')"><div class="product-card-img">🔴</div><div class="product-card-body"><h3>Flameproof PBS – Single Element</h3><p>Single-element flameproof push-button station for motor start or stop control, IP65-rated and Zone I certified in a compact aluminium housing.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🟡</div><div class="product-card-body"><h3>Flameproof PBS – Dual Element</h3><p>Two-element flameproof push-button station combining a start/stop button with an LED pilot indicator for local process status feedback.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🟢</div><div class="product-card-body"><h3>Flameproof PBS – Four Element</h3><p>Four-element flameproof push-button station in fully customisable start/stop/E-stop/indicator configuration for Zone I &amp; II motor control.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: PLUG SOCKET -->
+<div class="page" id="page-cat-plugsocket">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Plug & Socket</div><h1>Plug & Socket</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-pushbutton')">Push Button Station</a></li><li><a onclick="navigate('cat-plugsocket')" class="active">Plug & Socket</a></li><li><a onclick="navigate('cat-thermocouple')">Thermocouple Head</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-plug')"><div class="product-card-img">🔋</div><div class="product-card-body"><h3>Flameproof Plug &amp; Socket 16 A</h3><p>3P+E interlocked 16 A flameproof plug and socket in IP66-rated GI housing for safe portable equipment connection in Zone I &amp; II hazardous areas.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">⚡</div><div class="product-card-body"><h3>Flameproof Plug &amp; Socket 32 A</h3><p>4P+E 32 A Zone I-rated flameproof plug and socket with nickel-plated contacts and optional mechanical interlocking for high-power portable equipment.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>Flameproof Plug &amp; Socket 63 A</h3><p>Heavy-duty 63 A IP67 flameproof interlocked plug and socket designed for high-current temporary power in Zone I &amp; II classified plant areas.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: THERMOCOUPLE -->
+<div class="page" id="page-cat-thermocouple">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Thermocouple Head</div><h1>Thermocouple Head</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-thermocouple')" class="active">Thermocouple Head</a></li><li><a onclick="navigate('cat-cleanroom')">Clean Room Fitting</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-thermocouple')"><div class="product-card-img">🌡️</div><div class="product-card-body"><h3>Thermocouple Head – Type B (Aluminium)</h3><p>Aluminium DIN 43729 Type-B thermocouple connection head with IP55 protection for reliable temperature transmitter wiring in industrial process plants.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🧪</div><div class="product-card-body"><h3>Thermocouple Head – Type C (Cast Iron)</h3><p>Cast-iron DIN 43729 Type-C thermocouple head with IP55 rating and Zone I certification for temperature measurement in hazardous area process loops.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: CLEAN ROOM -->
+<div class="page" id="page-cat-cleanroom">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Clean Room Fitting</div><h1>Clean Room Fitting</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-thermocouple')">Thermocouple Head</a></li><li><a onclick="navigate('cat-cleanroom')" class="active">Clean Room Fitting</a></li><li><a onclick="navigate('cat-heater')">Heater Enclosure</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-cleanroom')"><div class="product-card-img">🏥</div><div class="product-card-body"><h3>Clean Room Bulkhead Light Fitting</h3><p>Mirror-polished SS 304/316 GMP-compliant bulkhead fitting with silicone gasket seal and IP65 rating for pharmaceutical and food-grade clean rooms.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">✨</div><div class="product-card-body"><h3>Clean Room Recessed LED Fitting</h3><p>Flush-mounted stainless-steel recessed LED fitting delivering 18 W–36 W glare-free illumination for ISO-classified pharmaceutical clean-room ceilings.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">💊</div><div class="product-card-body"><h3>Clean Room Batten Light Fitting</h3><p>Fully sealed 2×18 W/36 W IP65 clean-room batten fitting in brushed stainless steel for compliant strip-lighting in GMP pharmaceutical zones.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: HEATER -->
+<div class="page" id="page-cat-heater">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Heater Enclosure</div><h1>Heater Enclosure</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-cleanroom')">Clean Room Fitting</a></li><li><a onclick="navigate('cat-heater')" class="active">Heater Enclosure</a></li><li><a onclick="navigate('cat-misc')">Miscellaneous</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-heater')"><div class="product-card-img">🔥</div><div class="product-card-body"><h3>Flameproof Anti-Condensation Heater (50 W)</h3><p>50 W thermostat-controlled anti-condensation heater housed in a Zone II IP65 flameproof GI enclosure to protect panels from moisture ingress.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">♨️</div><div class="product-card-body"><h3>Flameproof Anti-Condensation Heater (100 W)</h3><p>100 W PTC ceramic or wire-wound heater in Zone I certified flameproof enclosure with adjustable thermostat for panel temperature management.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<!-- CATEGORY: MISC & ACCESSORIES -->
+<div class="page" id="page-cat-misc"><div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Miscellaneous</div><h1>Miscellaneous Products</h1></div></div><div class="container" style="padding:40px 20px;"><div class="info-box">This category includes: Cable Glands, Cable Trays, Conduit Fittings, Earthing Accessories, FLP Hooter, FLP Siren, FLP Solenoid Valve, FLP Transmitter Housing, and more. Please contact us for detailed specifications.</div><div style="text-align:center;margin-top:30px;"><button class="btn btn-primary" onclick="navigate('inquiry')">Request Product Catalog</button></div></div></div>
+
+<div class="page" id="page-cat-accessories"><div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Accessories</div><h1>Accessories</h1></div></div><div class="container" style="padding:40px 20px;"><div class="info-box">Accessories include: FLP Cable Glands (Brass/SS/Al), Conduit Fittings, Sealing Compounds, Reducers, Adapters, Earthing Bolts, and more. All accessories are Zone 1 & 2 rated and available in various sizes.</div><div style="text-align:center;margin-top:30px;"><button class="btn btn-primary" onclick="navigate('inquiry')">Request Product Catalog</button></div></div></div>
+
+<div class="page" id="page-cat-switches"><div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Limit Switches</div><h1>Limit Switches</h1></div></div><div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Luminaries Products</a></li><li><a onclick="navigate('cat-switches')" class="active">Limit Switches</a></li><li><a onclick="navigate('cat-switchgear')">Switch Gears</a></li></ul></div><div class="products-grid"><div class="product-card" onclick="navigate('prod-limit-switch')"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>FLP Limit Switch SPDT</h3><p>10A, 240V AC, Zone 1&2, GI</p><button class="btn btn-primary">View Details</button></div></div><div class="product-card"><div class="product-card-img">🔁</div><div class="product-card-body"><h3>FLP Limit Switch DPDT</h3><p>Dual action, heavy duty, IP65</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div></div></div></div></div>
+
+<!-- =================== PRODUCT DETAIL PAGES =================== -->
+<div class="page" id="page-prod-flp-light">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › <span onclick="navigate('cat-luminaries')">Well Glass Light Fitting</span> › Well Glass LED</div><h1>Flameproof Well Glass LED Light Fitting</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🌻</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">IIA / IIB</span><span class="tag">LM-6 Alloy</span><span class="tag">45W–160W</span><span class="tag">LED Driver</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Well Glass Light Fitting</div>
+      <h1>SEPL Flameproof Well Glass LED Fitting</h1>
+      <p>SEPL Flameproof–Weatherproof Well Glass LED Fittings are designed for use in hazardous locations Zone area I & II in gas group IIA and IIB. Constructed in die cast Aluminum Alloy LM-6, featuring LED and driver lighting. Available from 45W Sunflower to 160W configurations with ¾" ET entries.</p>
+      <p>Our offered fittings are designed and engineered with precision by skilled professionals following international quality standards. Clients can avail these fittings in multiple sizes, grades and designs as per their needs.</p>
+      <h3 style="font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;text-transform:uppercase;">Technical Specifications</h3>
+      <table class="spec-table">
+        <tr><td>Wattage Options</td><td>45W / 100W / 160W (Sunflower LED & Well Glass)</td></tr>
+        <tr><td>Light Source</td><td>LED with integrated driver</td></tr>
+        <tr><td>Housing Material</td><td>Die Cast Aluminum Alloy LM-6</td></tr>
+        <tr><td>Cable Entries</td><td>02 nos. ¾" ET entries</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone Area I & II</td></tr>
+        <tr><td>Gas Group</td><td>IIA, IIB</td></tr>
+        <tr><td>Finish</td><td>Epoxy Gray Stove Enamel</td></tr>
+        <tr><td>Application</td><td>Chemical, Pharma, Oil & Gas, Refinery</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>&nbsp;
+      <button class="btn btn-outline" onclick="navigate('contact')">Send Enquiry</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-panel">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-panels')">Control Panels</span> › FLP MCC Panel</div><h1>FLP Control Panel – MCC</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🖥️</div><div class="tag-row"><span class="tag">Zone 1</span><span class="tag">Zone 2</span><span class="tag">Custom Built</span><span class="tag">IP65</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-PNL-MCC | SKU: 2001</div>
+      <h1>Flameproof Motor Control Centre (MCC) Panel</h1>
+      <p>The SEPL Flameproof Motor Control Centre Panel is custom-engineered to the client's exact single-line diagram and housed in a certified flameproof enclosure for Zone I and Zone II hazardous locations. Each panel is assembled using quality-approved switchgear and protection devices, fully wired, tested and commissioned at our facility before dispatch to ensure a smooth and safe site installation.</p>
+      <p>Incomer options range from an MCCB to an air-circuit breaker depending on the fault-level requirement, and outgoing feeders are configured as direct-on-line, star-delta, variable-frequency drive or soft-starter types as specified. Full engineering documentation including General Arrangement drawings, single-line diagrams, cable schedules and test reports is provided with every panel, supporting swift regulatory approval and ease of future maintenance.</p>
+      <table class="spec-table">
+        <tr><td>Enclosure Material</td><td>MS / SS 304 / SS 316</td></tr>
+        <tr><td>Protection</td><td>IP65 / IP66</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone 1 & 2</td></tr>
+        <tr><td>Incoming Supply</td><td>415V ± 10%, 3Ph, 50Hz</td></tr>
+        <tr><td>Control Supply</td><td>110V / 24V DC (option)</td></tr>
+        <tr><td>Feeder Types</td><td>DOL / Star-Delta / VFD / Soft Starter</td></tr>
+        <tr><td>Bus Bar</td><td>Aluminum / Copper</td></tr>
+        <tr><td>Certifications</td><td>BIS, CIMFR</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-junction">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-junction')">Junction & Push Box</span> › 4-Way Junction Box</div><h1>Flameproof 4-Way Junction Box</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔧</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">LM-6 Alloy</span><span class="tag">4-Way Terminal</span><span class="tag">IP65</span><span class="tag">Epoxy Finish</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Junction & Push Box</div>
+      <h1>Flameproof 4-Way Junction Box</h1>
+      <p>The SEPL Flameproof 4-Way Junction Box is a core component of safe hazardous-area wiring systems. Precision die-cast from LM-6 aluminium alloy, the enclosure offers excellent resistance to impact, corrosion and the propagation of internal ignition to the surrounding explosive atmosphere. A precision-machined flame-path ensures compliance with Zone I and Zone II classification requirements.</p>
+      <p>Inside, a four-way screw-clamp terminal block provides reliable cable-to-cable and cable-to-equipment connections. The enclosure is sealed with a synthetic rubber gasket to maintain IP65 ingress protection, and the entire outer surface is finished in an epoxy-grey stove enamel coating for long-term durability in aggressive industrial environments including chemical plants, pharmaceutical facilities and oil &amp; gas installations.</p>
+      <h3 style="font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;text-transform:uppercase;">Technical Specifications</h3>
+      <table class="spec-table">
+        <tr><td>Housing Material</td><td>LM6 Aluminum Alloy</td></tr>
+        <tr><td>Terminal Block</td><td>4-Way Terminal Block</td></tr>
+        <tr><td>Sealing</td><td>Synthetic Rubber Gasket</td></tr>
+        <tr><td>Finish</td><td>Epoxy Gray Stove Enamel</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Applications</td><td>Chemical, Pharmaceutical, Oil & Gas</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>&nbsp;
+      <button class="btn btn-outline" onclick="navigate('contact')">Send Enquiry</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-pushbutton">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-junction')">Junction & Push Box</span> › Push Button Station</div><h1>Flameproof Push Button Station</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔴</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">Single Phase</span><span class="tag">FLP</span><span class="tag">IP65</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Junction & Push Box</div>
+      <h1>Flameproof Single-Phase Push Button Station</h1>
+      <p>The SEPL Flameproof Single-Phase Push Button Station delivers robust, safe operator control for motors and process equipment in Zone I and Zone II hazardous environments. Each station is machined from LM-6 aluminium alloy and features precision-threaded conduit entries with stainless steel hardware throughout to resist corrosion in the harshest industrial atmospheres.</p>
+      <p>Available in single-element (start or stop) through to multi-element combinations incorporating emergency-stop mushroom heads and LED pilot indicators, every station is customisable to the exact functional requirements of the application. The contact rating of 10 A at 240 V AC ensures compatibility with standard industrial control circuits, and all units are supplied with full quality-inspection documentation.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Single Phase / Multi-element</td></tr>
+        <tr><td>Button Types</td><td>Start (Green) / Stop (Red) / Emergency Stop</td></tr>
+        <tr><td>Contact Rating</td><td>10A, 240V AC</td></tr>
+        <tr><td>Enclosure</td><td>Flameproof, LM6 Aluminum</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Custom Options</td><td>Tailor-made configurations available</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-distribution">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-distribution')">Distribution Box</span></div><h1>FLP Distribution Box</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">📦</div><div class="tag-row"><span class="tag">Zone 1</span><span class="tag">Zone 2</span><span class="tag">4–24 Ways</span><span class="tag">IP65</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-DB-4W | SKU: 5001</div>
+      <h1>FLP Distribution Box – 4 Way</h1>
+      <p>Flameproof distribution boxes with MCB / MCCB protection for power distribution in hazardous areas. Robust GI enclosures with all entries threaded for conduit or cable glands.</p>
+      <table class="spec-table">
+        <tr><td>Ways</td><td>4 / 8 / 12 / 16 / 24</td></tr>
+        <tr><td>Incomer Rating</td><td>16A to 200A (MCCB)</td></tr>
+        <tr><td>Outgoing</td><td>MCB 6A–63A</td></tr>
+        <tr><td>Voltage</td><td>415V / 240V AC</td></tr>
+        <tr><td>Housing</td><td>GI Sheet, 2mm minimum</td></tr>
+        <tr><td>Finish</td><td>Powder Coated (Grey RAL 7035)</td></tr>
+        <tr><td>Certifications</td><td>BIS, CIMFR</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-plug">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-switchgear')">FLP Switchgears</span> › Switch Socket & Plug Top</div><h1>Flameproof Switch Socket & Plug Top</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔋</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">FLP</span><span class="tag">MCB</span><span class="tag">IP65</span><span class="tag">Plug Top</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Flameproof Electrical Switchgears</div>
+      <h1>Flameproof Switch Socket with MCB &amp; Plug Top</h1>
+      <p>The SEPL Flameproof Switch Socket with MCB and Plug Top integrates power switching, overcurrent protection and a cable-entry plug top into a single certified flameproof enclosure. Manufactured from LM-6 die-cast aluminium with a robust epoxy-painted finish, the assembly eliminates the need for separate switchgear and socket units, simplifying installation and reducing the overall hazardous-area electrical footprint.</p>
+      <p>The incorporated MCB provides reliable short-circuit and overload protection rated to IEC standards, while the plug top accepts standard industrial cable sizes for portable equipment connection. Available in 6 A through 32 A ratings and in switch-only and switch-plus-socket variants, these products serve chemical, pharmaceutical, paint manufacturing and oil &amp; gas process environments.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>FLP Switch Socket with MCB & Plug Top</td></tr>
+        <tr><td>MCB Rating</td><td>6A / 10A / 16A / 32A</td></tr>
+        <tr><td>Voltage</td><td>240V AC / 415V AC</td></tr>
+        <tr><td>Enclosure</td><td>LM6 Aluminum Alloy / GI</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Variants</td><td>Switch Socket + Plug Top / Switch Socket + MCB</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-limit-switch">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-junction')">Junction & Push Box</span> › 10A Flameproof Limit Switch</div><h1>10A Flameproof Limit Switch</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔌</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">10A</span><span class="tag">SPDT</span><span class="tag">IP65</span><span class="tag">FLP</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Junction & Push Box</div>
+      <h1>10 A Flameproof Limit Switch</h1>
+      <p>The SEPL 10 A Flameproof Limit Switch is engineered for precise and reliable position sensing in Zone I and Zone II hazardous locations. Housed in a rugged LM-6 aluminium or GI enclosure with a flame-path machined to exacting tolerances, the switch body prevents any internal arc or spark from propagating into the surrounding explosive atmosphere. All external hardware is stainless steel to resist corrosion in aggressive industrial environments.</p>
+      <p>Available in SPDT and DPDT contact configurations with roller arm, plunger and adjustable whisker actuator styles, the switch carries a contact rating of 10 A at 240 V AC and IP65 ingress protection. It is the preferred choice for conveyor position sensing, valve-status detection and safety interlocking in chemical plants, refineries and pharmaceutical facilities.</p>
+      <table class="spec-table">
+        <tr><td>Current Rating</td><td>10A</td></tr>
+        <tr><td>Contact Type</td><td>SPDT / DPDT</td></tr>
+        <tr><td>Voltage</td><td>240V AC</td></tr>
+        <tr><td>Enclosure</td><td>LM6 Aluminum / GI</td></tr>
+        <tr><td>Actuator</td><td>Roller arm / Plunger</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-switchgear">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-switchgear')">Switch Gears</span></div><h1>FLP Isolator Switch</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">⚡</div><div class="tag-row"><span class="tag">Zone 1</span><span class="tag">Zone 2</span><span class="tag">16A–200A</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-ISO-TP | SKU: 8001</div>
+      <h1>FLP Isolator Switch – TP</h1>
+      <p>Flameproof isolator switches for safe disconnection of electrical circuits in hazardous areas. Available in TP and TPN configurations from 16A to 200A.</p>
+      <table class="spec-table">
+        <tr><td>Rating</td><td>16A / 32A / 63A / 100A / 200A</td></tr>
+        <tr><td>Type</td><td>TP (3-Pole) / TPN (3P+N)</td></tr>
+        <tr><td>Voltage</td><td>415V AC, 50Hz</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Zone</td><td>Zone 1 & Zone 2</td></tr>
+        <tr><td>Housing</td><td>Cast Iron</td></tr>
+        <tr><td>Handle</td><td>External rotary, padlockable</td></tr>
+        <tr><td>Certifications</td><td>BIS, CIMFR</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-thermocouple">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-thermocouple')">Thermocouple Head</span></div><h1>Thermocouple Head</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🌡️</div><div class="tag-row"><span class="tag">IP55</span><span class="tag">Al/CI</span><span class="tag">B/C/D/F Type</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-TCH-B-AL | SKU: 9001</div>
+      <h1>Thermocouple Head – Type B (Aluminum)</h1>
+      <p>Standard thermocouple connection heads for temperature measurement in industrial processes. Available in aluminum and cast iron materials, various head types as per DIN 43729.</p>
+      <table class="spec-table">
+        <tr><td>Material</td><td>Aluminum / Cast Iron</td></tr>
+        <tr><td>Head Type</td><td>B / C / D / F (DIN 43729)</td></tr>
+        <tr><td>Protection</td><td>IP55 / IP65</td></tr>
+        <tr><td>Temperature Range</td><td>-50°C to +400°C</td></tr>
+        <tr><td>Terminal Type</td><td>Screw terminal, 4 way</td></tr>
+        <tr><td>Insert Connection</td><td>G½" / G¾" / NPT ½"</td></tr>
+        <tr><td>Finish</td><td>Natural / Powder coated</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-cleanroom">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-cleanroom')">Clean Room Fitting</span></div><h1>Clean Room Bulkhead Fitting</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🏥</div><div class="tag-row"><span class="tag">GMP</span><span class="tag">SS 304/316</span><span class="tag">IP65</span><span class="tag">Pharma</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-CR-BH | SKU: 10001</div>
+      <h1>Clean Room Bulkhead Fitting</h1>
+      <p>Hygienic clean room light fittings manufactured in Stainless Steel (SS 304/316) for pharmaceutical, food processing, and electronics clean rooms. Designed for GMP compliance and easy cleaning.</p>
+      <table class="spec-table">
+        <tr><td>Material</td><td>SS 304 / SS 316</td></tr>
+        <tr><td>Light Source</td><td>LED 18W / 24W / 36W</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Clean Room Class</td><td>ISO Class 5–8 / GMP Grade A–D</td></tr>
+        <tr><td>Voltage</td><td>220–240V AC, 50Hz</td></tr>
+        <tr><td>Sealing</td><td>Silicone gasket, tool-free</td></tr>
+        <tr><td>Finish</td><td>Mirror polished / Brushed</td></tr>
+        <tr><td>Luminous Efficacy</td><td>≥ 100 Lm/W</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-heater">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-heater')">Heater Enclosure</span></div><h1>FLP Heater Enclosure 50W</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔥</div><div class="tag-row"><span class="tag">Zone 2</span><span class="tag">Anti-Condensation</span><span class="tag">IP65</span></div></div>
+    <div class="product-info">
+      <div class="sku">Model: SET-HE-50W | SKU: 11001</div>
+      <h1>FLP Anti-Condensation Heater Enclosure 50W</h1>
+      <p>Flameproof heater enclosures designed to prevent moisture and condensation inside electrical panels and enclosures in hazardous areas. Thermostat-controlled with automatic operation.</p>
+      <table class="spec-table">
+        <tr><td>Power</td><td>50W / 100W / 150W / 200W</td></tr>
+        <tr><td>Voltage</td><td>240V AC, 50Hz</td></tr>
+        <tr><td>Thermostat Range</td><td>0°C to +60°C (adjustable)</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Zone</td><td>Zone 1 & Zone 2</td></tr>
+        <tr><td>Housing</td><td>GI, Epoxy coated</td></tr>
+        <tr><td>Element Type</td><td>PTC Ceramic / Wire wound</td></tr>
+        <tr><td>Certifications</td><td>BIS</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Request Quotation</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-hooter">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-switchgear')">FLP Switchgears</span> › SEPL FLP Hooter</div><h1>SEPL FLP Hooter / Fire Alarm Hooter</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">📢</div><div class="tag-row"><span class="tag">Zone II</span><span class="tag">FLP</span><span class="tag">Electronic</span><span class="tag">Fire Alarm</span><span class="tag">Manual Call Point</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Flameproof Electrical Switchgears</div>
+      <h1>Flameproof Electronic Hooter &amp; Fire Alarm Sounder</h1>
+      <p>The SEPL Flameproof Electronic Hooter and Fire Alarm Sounder is an essential audible warning device for hazardous-area safety systems. Engineered in a compact Zone II-rated LM-6 aluminium enclosure, the unit produces a high-decibel electronic tone in continuous or pulsating modes to alert personnel to process upsets, gas releases or fire events. Its weatherproof and corrosion-resistant construction ensures reliable performance in the most demanding outdoor and indoor plant environments.</p>
+      <p>Complementary products include the Flameproof Fire Alarm Hooter with higher sound output for large open plant areas, and the Flameproof Manual Call Point for manual fire alarm activation. All units are supplied with conduit entries and mounting brackets and are compatible with standard 24 V DC and 220 V AC fire and alarm control panels widely used across chemical, petroleum and pharmaceutical industries.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Electronic FLP Hooter / Fire Alarm Hooter</td></tr>
+        <tr><td>Enclosure</td><td>Flameproof, Aluminum / GI</td></tr>
+        <tr><td>Voltage</td><td>24V DC / 220V AC</td></tr>
+        <tr><td>Sound Output</td><td>High decibel alarm tone</td></tr>
+        <tr><td>Tone Options</td><td>Continuous / Pulsating</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone II</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<!-- SEPL NEW PRODUCT PAGES -->
+<div class="page" id="page-prod-sunflower">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-luminaries')">Well Glass Light Fitting</span> › Sunflower LED</div><h1>Sunflower LED Light Fittings</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🌻</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">IIA / IIB</span><span class="tag">LM-6 Alloy</span><span class="tag">LED + Driver</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Well Glass Light Fitting </div>
+      <h1>SEPL Sunflower LED Light Fittings</h1>
+      <p>SEPL Sunflower LED Light Fittings are a signature product from Shreya Ex-Tech Private Limited. Featuring a distinctive sunflower-style design, these fittings incorporate LED and driver lighting technology in die-cast Aluminum Alloy LM-6 housing. Suitable for Zone I & II hazardous locations in gas groups IIA and IIB.</p>
+      <p>Having 02 nos. ¾" ET entries, these fittings are ideal for chemical, pharmaceutical, and oil & gas environments requiring reliable, energy-efficient lighting.</p>
+      <table class="spec-table">
+        
+        <tr><td>Light Source</td><td>LED with integrated driver</td></tr>
+        <tr><td>Housing Material</td><td>Die Cast Aluminum Alloy LM-6</td></tr>
+        <tr><td>Cable Entries</td><td>02 nos. ¾" ET entries</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone Area I & II</td></tr>
+        <tr><td>Gas Group</td><td>IIA, IIB</td></tr>
+        <tr><td>Finish</td><td>Epoxy Gray Stove Enamel</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>&nbsp;
+      <button class="btn btn-outline" onclick="navigate('contact')">Send Enquiry</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-openable">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-openable')">Openable LED Light Fitting</span> › 20W Bottom Openable</div><h1>20W Bottom Openable Flameproof LED Fitting</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔆</div><div class="tag-row"><span class="tag">20W</span><span class="tag">Bottom Openable</span><span class="tag">FLP</span><span class="tag">Rectangular</span><span class="tag">Clean Room</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Openable LED Light Fitting / Clean Room</div>
+      <h1>20 W Bottom Openable Flameproof LED Fitting</h1>
+      <p>The SEPL 20 W Bottom Openable Flameproof LED Fitting solves one of the most common challenges in hazardous-area clean-room maintenance: replacing or servicing light sources without disturbing the ceiling structure or requiring scaffolding access. The bottom-hinged door swings open on a captive hinge, giving immediate tool-free access to the LED module and driver assembly while the fitting body remains bolted to the ceiling surface — minimising disruption to the GMP environment below.</p>
+      <p>The rectangular aluminium housing is precision-machined to flameproof tolerances and finished in a smooth, easy-to-wipe surface coating that meets the hygiene requirements of pharmaceutical Grade A–D and ISO Class 5–8 clean rooms. Available in both 20 W rectangular and 12 W square formats, the fittings deliver uniform, high-colour-rendering LED illumination and are certified for continuous service in Zone I and Zone II hazardous classified areas.</p>
+      <table class="spec-table">
+        <tr><td>Wattage</td><td>20W (also available in 12W Square type)</td></tr>
+        <tr><td>Opening Style</td><td>Bottom Openable (also Top Openable rectangular)</td></tr>
+        <tr><td>Light Source</td><td>LED</td></tr>
+        <tr><td>Shape</td><td>Rectangular / Square</td></tr>
+        <tr><td>Application</td><td>FLP Clean Room, Hazardous Area</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Housing</td><td>Aluminum Alloy LM-6</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-floodlight">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-luminaries')">Flameproof Light Fitting</span> › Flood Light</div><h1>Flameproof Flood Light Fitting</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔦</div><div class="tag-row"><span class="tag">Zone I & II</span><span class="tag">FLP</span><span class="tag">IP65</span><span class="tag">Premium Metals</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Flameproof Light Fitting</div>
+      <h1>Flameproof Flood Light Fitting</h1>
+      <p>The SEPL Flameproof Flood Light Fitting delivers powerful, broad-beam illumination across wide outdoor and indoor hazardous-area zones including tank farms, loading bays, process equipment plinths and plant road intersections. Fabricated from premium-grade die-cast aluminium alloy, the housing combines outstanding thermal management with resistance to corrosion, UV degradation and mechanical impact — key requirements for reliable long-term service in Zone II outdoor environments.</p>
+      <p>An efficient LED light engine provides high luminous efficacy and long operational life, substantially reducing maintenance frequency and energy consumption compared to conventional HID sources. The fitting is equipped with a toughened safety glass front panel sealed with a high-temperature silicone gasket and is fully rated to IP65. Multiple mounting bracket configurations are available to suit wall, pole and overhead-structure installations across chemical, petrochemical and oil &amp; gas plant facilities.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Flameproof Flood Light</td></tr>
+        <tr><td>Housing</td><td>Premium Grade Metals</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Application</td><td>Outdoor/Indoor, Chemical, Refinery, Plant area</td></tr>
+        <tr><td>Testing</td><td>Thoroughly tested per quality parameters</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-reactor">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-reactor')">Reactor Vessel Lamp</span></div><h1>FLP & WP Reactor Vessel Lamp</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">⚗️</div><div class="tag-row"><span class="tag">FLP</span><span class="tag">Weatherproof</span><span class="tag">Reactor Vessel</span><span class="tag">Zone I & II</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: FLP-WP Reactor Vessel Lamp</div>
+      <h1>Flameproof &amp; Weatherproof Reactor Vessel Lamp</h1>
+      <p>The SEPL Flameproof and Weatherproof Reactor Vessel Lamp is a purpose-engineered lighting solution for the challenging interior environment of chemical and pharmaceutical reactor vessels. Designed to operate safely inside sealed vessels where flammable gases, vapours and aggressive chemical atmospheres are present, the lamp body is constructed from corrosion-resistant materials capable of withstanding chemical splash, high humidity and elevated temperatures.</p>
+      <p>The compact form factor allows installation through standard vessel nozzle openings, and the robust toughened glass window ensures excellent light transmission for operator inspection and process monitoring activities. Available in both flameproof and combined flameproof-weatherproof ratings, these lamps are indispensable for safe plant operation in chemical, pharmaceutical, petrochemical and specialty-chemical manufacturing environments.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Flameproof & Weatherproof Reactor Vessel Lamp</td></tr>
+        <tr><td>Application</td><td>Inside reactor vessels, chemical plants, pharma</td></tr>
+        <tr><td>Enclosure</td><td>FLP + WP rated</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Protection</td><td>IP65 / IP66</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-tubelight">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-luminaries')">Flameproof Light Fitting</span> › Tube Light</div><h1>Flameproof Tube Light Fitting</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">💫</div><div class="tag-row"><span class="tag">36W</span><span class="tag">FLP</span><span class="tag">Zone II</span><span class="tag">IP65</span><span class="tag">Tube Light</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Flameproof Light Fitting</div>
+      <h1>36W Flameproof Tube Light Fitting</h1>
+      <p>SEPL manufactures high-quality Flameproof Tube Light Fittings in 36W configuration. Also available as clean room tube light fittings. Manufactured at our state-of-the-art infrastructure facility employing advanced technology. Post-production, these products are thoroughly inspected by quality controllers.</p>
+      <table class="spec-table">
+        <tr><td>Wattage</td><td>36W (also 2×18W / 2×36W)</td></tr>
+        <tr><td>Light Source</td><td>Fluorescent / LED Tube</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone II</td></tr>
+        <tr><td>Housing</td><td>Aluminum Alloy / GI</td></tr>
+        <tr><td>Variants</td><td>FLP Tube Light / Clean Room Tube Light</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-rotary">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-rotary')">Rotary Switches</span></div><h1>FLP Rotary Switch</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔁</div><div class="tag-row"><span class="tag">FLP</span><span class="tag">Zone I & II</span><span class="tag">Rotary</span><span class="tag">Switch Socket</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Rotary Switches</div>
+      <h1>Flameproof Rotary Selector Switch</h1>
+      <p>The SEPL Flameproof Rotary Selector Switch and combined Switch-Socket-Rotary units provide a safe and versatile means of circuit selection, mode change and equipment isolation within Zone I and Zone II classified hazardous locations. The switch mechanism is housed inside a precision die-cast LM-6 aluminium flameproof enclosure with a positively detented rotary handle that gives tactile confirmation of each switched position — critical for safe operation in high-noise plant environments.</p>
+      <p>Available in 2 to 8 position configurations with contact ratings from 10 A to 32 A at 240 V or 415 V AC, these switches are widely used for motor speed-range selection, pump changeover, manual/auto mode switching and lighting circuit control in chemical processing plants, pharmaceutical production areas and oil &amp; gas facilities. Custom configurations and legend plates are available on request.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>FLP Rotary Switch / FLP Switch Socket + Rotary</td></tr>
+        <tr><td>Positions</td><td>2 / 3 / 4 / 6 / 8 positions</td></tr>
+        <tr><td>Rating</td><td>10A / 16A / 32A</td></tr>
+        <tr><td>Voltage</td><td>240V AC / 415V AC</td></tr>
+        <tr><td>Enclosure</td><td>LM6 Aluminum Alloy</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-torch">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-misc')">Miscellaneous</span> › Safety Torch</div><h1>Flame Proof Safety Torch</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔦</div><div class="tag-row"><span class="tag">FLP</span><span class="tag">Zone I & II</span><span class="tag">Rechargeable</span><span class="tag">Safety</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Flameproof Torch Fitting</div>
+      <h1>Flameproof Rechargeable Safety Torch</h1>
+      <p>The SEPL Flameproof Rechargeable Safety Torch provides bright, portable illumination for plant operators working in dark, confined or inaccessible Zone I and Zone II hazardous locations. The torch body is precision-machined from high-strength materials and fully certified as flameproof, ensuring no internal spark or heat can ignite the surrounding explosive atmosphere even under fault conditions.</p>
+      <p>Powered by a long-life rechargeable battery, the torch delivers extended runtime on a single charge and features an integrated charging indicator. The ergonomic grip and robust construction allow safe, one-handed operation even while wearing protective gloves — an essential personal safety tool for maintenance technicians and inspection engineers in chemical, oil &amp; gas and pharmaceutical plant environments.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Rechargeable Flameproof Safety Torch</td></tr>
+        <tr><td>Power Source</td><td>Rechargeable Battery</td></tr>
+        <tr><td>Light Source</td><td>LED</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone I & II</td></tr>
+        <tr><td>Protection</td><td>Flameproof, IP65</td></tr>
+        <tr><td>Application</td><td>Chemical, Oil & Gas, Pharma, Refinery</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-exhaust">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-exhaust')">Exhaust Fan</span></div><h1>Exhaust Fan for Factory</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">💨</div><div class="tag-row"><span class="tag">300W</span><span class="tag">Electric</span><span class="tag">Flameproof</span><span class="tag">Industrial</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Exhaust Fan for Factory</div>
+      <h1>300 W Industrial Heavy-Duty Exhaust Fan</h1>
+      <p>The SEPL 300 W Industrial Heavy-Duty Exhaust Fan is engineered for continuous high-volume air extraction in demanding industrial environments including boiler sections, process plant areas, large factory floors and warehouse spaces. The heavy-gauge steel or aluminium housing and dynamically balanced fan blade assembly minimise vibration during operation, reducing mechanical wear and extending service life under continuous-duty cycles.</p>
+      <p>SEPL's exhaust fan range encompasses three distinct product families: the standard 300 W Industrial Exhaust Fan for general factory use; the lightweight Electric Exhaust Fan suited to commercial kitchens, canteens and smaller ventilation duties; and the certified Flameproof Exhaust Fan with a Zone I and Zone II rated enclosure for safe air removal from hazardous process areas containing flammable gases or vapours.</p>
+      <table class="spec-table">
+        <tr><td>Power</td><td>300W (also smaller options)</td></tr>
+        <tr><td>Types Available</td><td>Standard / Electric / Flameproof / Industrial</td></tr>
+        <tr><td>Application</td><td>Boilers, Plant process sections, Factory, Canteen</td></tr>
+        <tr><td>Voltage</td><td>220V / 415V AC</td></tr>
+        <tr><td>Variants</td><td>Table / Wall mount / Ceiling mount</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-cablegland">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-cablegland')">Cable Gland & Stopper</span></div><h1>Cable Gland & Stopper</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">🔩</div><div class="tag-row"><span class="tag">Brass</span><span class="tag">SS</span><span class="tag">FLP</span><span class="tag">All Sizes</span><span class="tag">Stopper</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Cable Gland & Stopper</div>
+      <h1>Flameproof Brass &amp; Stainless Steel Cable Gland &amp; Stopper</h1>
+      <p>The SEPL range of Flameproof Cable Glands and Blanking Stoppers are precision-manufactured in dezincification-resistant brass and marine-grade stainless steel to provide gas-tight, mechanically secure cable entries for all FLP and WP enclosures. Single-compression types are used for light-duty static applications, while double-compression glands deliver superior seal integrity and vibration resistance for dynamic or outdoor cable runs.</p>
+      <p>Available across all standard metric thread sizes from M16 to M63, as well as ½″ and ¾″ NPT and PG series, the glands are compatible with armoured, unarmoured and braided cable types. Blanking stoppers seal unused entries to maintain the full flameproof certification and IP65/IP66 ingress protection of the enclosure. All products are supplied with locking rings and packings ready for immediate installation.</p>
+      <table class="spec-table">
+        <tr><td>Material</td><td>Brass / Stainless Steel (SS 304/316)</td></tr>
+        <tr><td>Thread</td><td>Metric (M16–M63) / NPT / PG sizes</td></tr>
+        <tr><td>Types</td><td>Single compression / Double compression / Stopper plug</td></tr>
+        <tr><td>Applications</td><td>FLP/WP enclosures, Junction boxes, Panels</td></tr>
+        <tr><td>Standard</td><td>IS / IEC</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<div class="page" id="page-prod-telephone">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('cat-misc')">Telephone Instrument</span></div><h1>Flameproof Telephone Instrument</h1></div></div>
+  <div class="container"><div class="single-product">
+    <div><div class="product-img-wrap">📞</div><div class="tag-row"><span class="tag">FLP</span><span class="tag">Zone II</span><span class="tag">Corded</span><span class="tag">Industrial</span></div></div>
+    <div class="product-info">
+      <div class="sku">Brand: SEPL | Category: Telephone Instrument</div>
+      <h1>Flameproof Corded Telephone Instrument</h1>
+      <p>The SEPL Flameproof Corded Telephone Instrument enables clear, reliable voice communication in Zone II hazardous locations where conventional telecommunication equipment cannot safely be deployed. The handset and cradle assembly are housed within a certified flameproof die-cast aluminium enclosure that prevents any internal electrical energy from igniting the surrounding explosive atmosphere, making it safe for continuous installation in chemical, petroleum, pharmaceutical and refinery process areas.</p>
+      <p>Compatible with standard analogue PSTN lines and industrial PABX systems, the instrument supports both internal plant communications and external emergency calls. The robust armoured cable, corrosion-resistant push buttons and weatherproof designation provide reliable year-round operation in outdoor and semi-outdoor locations. Units are supplied with mounting bracket, conduit entry and full installation documentation.</p>
+      <table class="spec-table">
+        <tr><td>Type</td><td>Corded FLP Telephone Instrument</td></tr>
+        <tr><td>Enclosure</td><td>Flameproof, Die Cast Aluminum</td></tr>
+        <tr><td>Protection</td><td>IP65</td></tr>
+        <tr><td>Hazardous Zone</td><td>Zone II</td></tr>
+        <tr><td>Application</td><td>Chemical, Petroleum, Pharma, Refinery plants</td></tr>
+        <tr><td>Communication</td><td>Standard telephone lines / Industrial PABX</td></tr>
+        <tr><td>Brand</td><td>SEPL (Shreya Ex-Tech Private Limited)</td></tr>
+      </table>
+      <button class="btn btn-primary" onclick="navigate('inquiry')">Get Best Quote</button>
+    </div>
+  </div></div>
+</div>
+
+<!-- REACTOR/OPENABLE/NEW CATEGORY PAGES -->
+<div class="page" id="page-cat-openable">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Openable LED Light Fitting</div><h1>Openable LED Light Fitting</h1><p style="color:var(--text-muted);margin-top:8px;">Bottom Openable & Top Openable Flameproof LED Fittings</p></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Well Glass Light Fitting</a></li><li><a onclick="navigate('cat-openable')" class="active">Openable LED Fitting</a></li><li><a onclick="navigate('cat-cleanroom')">Clean Room Fitting</a></li><li><a onclick="navigate('cat-reactor')">Reactor Vessel Lamp</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-openable')"><div class="product-card-img">🔆</div><div class="product-card-body"><h3>20 W Bottom Openable Flameproof LED Fitting</h3><p>Rectangular 20 W flameproof LED fitting with bottom-hinged access panel for hassle-free lamp replacement in Zone I &amp; II clean-room environments.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">💡</div><div class="product-card-body"><h3>12 W Square Bottom Openable FLP Fitting</h3><p>Compact 12 W square-format flameproof LED fitting with bottom-opening door, IP65-rated for Zone II clean-room and laboratory installations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔦</div><div class="product-card-body"><h3>Top Openable Rectangular FLP LED Fitting</h3><p>Top-access rectangular flameproof LED fitting available in multiple wattages for surface-mounted ceiling installations in Zone I &amp; II hazardous process zones.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<div class="page" id="page-cat-reactor">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Reactor Vessel Lamp</div><h1>FLP & WP Reactor Vessel Lamp</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-luminaries')">Well Glass Light Fitting</a></li><li><a onclick="navigate('cat-openable')">Openable LED Fitting</a></li><li><a onclick="navigate('cat-reactor')" class="active">Reactor Vessel Lamp</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-reactor')"><div class="product-card-img">⚗️</div><div class="product-card-body"><h3>Flameproof Reactor Vessel Lamp</h3><p>Purpose-built Zone I &amp; II IP65 flameproof lamp for safe internal illumination of chemical and pharmaceutical reactor vessels during operation.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🧪</div><div class="product-card-body"><h3>Weatherproof Reactor Vessel Lamp</h3><p>IP66-rated chemical-resistant weatherproof reactor vessel lamp engineered for reliable lighting inside wet and corrosive process vessel environments.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<div class="page" id="page-cat-rotary">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Rotary Switches</div><h1>Rotary Switches</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-switchgear')">FLP Switchgears</a></li><li><a onclick="navigate('cat-rotary')" class="active">Rotary Switches</a></li><li><a onclick="navigate('cat-flpwp')">FLP-WP Switchgear</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-rotary')"><div class="product-card-img">🔁</div><div class="product-card-body"><h3>Flameproof Switch Socket &amp; Rotary Switch</h3><p>10 A–32 A flameproof combined switch socket and multi-position rotary selector in LM-6 aluminium housing for Zone I &amp; II circuit control.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">⚙️</div><div class="product-card-body"><h3>Weatherproof Rotary Selector Switch</h3><p>IP65 weatherproof rotary selector available in multiple positions for safe equipment mode selection in outdoor and corrosive industrial environments.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<div class="page" id="page-cat-flpwp">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › FLP-WP Switchgear</div><h1>FLP-WP Switchgear</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-switchgear')">FLP Switchgears</a></li><li><a onclick="navigate('cat-rotary')">Rotary Switches</a></li><li><a onclick="navigate('cat-flpwp')" class="active">FLP-WP Switchgear</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card"><div class="product-card-img">🛡️</div><div class="product-card-body"><h3>Flameproof &amp; WP Isolator Switch</h3><p>16 A–200 A dual-rated FLP and weatherproof rotary isolator providing safe electrical isolation for outdoor and corrosive Zone II process locations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">⚡</div><div class="product-card-body"><h3>Flameproof &amp; WP MCB Enclosure</h3><p>Multi-way IP65 flameproof and weatherproof MCB enclosure for overcurrent protection of sub-circuits in outdoor Zone II plant substations.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>Flameproof &amp; WP Motor Starter</h3><p>DOL and star-delta motor starters in dual-rated FLP/WP enclosures for safe motor control in outdoor or corrosive Zone II classified environments.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<div class="page" id="page-cat-cablegland">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Cable Gland & Stopper</div><h1>Cable Gland & Stopper</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-switchgear')">FLP Switchgears</a></li><li><a onclick="navigate('cat-cablegland')" class="active">Cable Gland & Stopper</a></li><li><a onclick="navigate('cat-misc')">Miscellaneous</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-cablegland')"><div class="product-card-img">🔩</div><div class="product-card-body"><h3>Flameproof Brass Cable Gland</h3><p>Single and double-compression brass cable glands in metric M16–M63 and NPT sizes for gas-tight sealing of FLP and WP enclosure cable entries.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔧</div><div class="product-card-body"><h3>Stainless Steel Cable Gland</h3><p>SS 304/316 cable glands delivering superior corrosion resistance for cable entry sealing in marine, offshore and aggressive chemical process environments.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔌</div><div class="product-card-body"><h3>Cable Entry Stopper &amp; Blanking Plug</h3><p>Brass and SS blanking stoppers sealing unused conduit and cable entry points on FLP and WP enclosures to maintain certification integrity.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+<div class="page" id="page-cat-exhaust">
+  <div class="product-hero"><div class="container"><div class="breadcrumb"><span onclick="navigate('home')">Home</span> › <span onclick="navigate('products')">Products</span> › Exhaust Fan</div><h1>Exhaust Fan</h1></div></div>
+  <div class="container"><div class="products-layout"><div class="sidebar"><h3>All Categories</h3><ul><li><a onclick="navigate('cat-exhaust')" class="active">Exhaust Fan</a></li><li><a onclick="navigate('cat-misc')">Miscellaneous</a></li></ul></div>
+  <div class="products-grid">
+    <div class="product-card" onclick="navigate('prod-exhaust')"><div class="product-card-img">💨</div><div class="product-card-body"><h3>300 W Industrial Heavy-Duty Exhaust Fan</h3><p>Heavy-duty 300 W industrial exhaust fan for high-volume air extraction in boiler sections, large factories and process plant ventilation systems.</p><button class="btn btn-primary">View Details</button></div></div>
+    <div class="product-card"><div class="product-card-img">🌬️</div><div class="product-card-body"><h3>Electric Exhaust Fan</h3><p>Lightweight and energy-efficient electric exhaust fan suitable for general factory floors, commercial kitchens, canteens and building ventilation purposes.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+    <div class="product-card"><div class="product-card-img">🔥</div><div class="product-card-body"><h3>Flameproof Industrial Exhaust Fan</h3><p>Certified Zone I &amp; II flameproof exhaust fan for continuous safe ventilation of hazardous areas where flammable gases or vapours may be present.</p><button class="btn btn-primary" onclick="navigate('inquiry')">Inquire</button></div></div>
+  </div></div></div>
+</div>
+
+
+<div class="page" id="page-industries">
+  <div class="about-page-hero"><div class="container"><div class="section-label">Sectors We Serve</div><h1 class="section-title" style="font-size:52px;">Industries We <span>Cater To</span></h1><div class="divider center"></div></div></div>
+  <section><div class="container">
+    <div class="industries-grid">
+      <div class="industry-card"><div class="icon">🏭</div><h3>Chemical Industry</h3><p>Chemical manufacturing environments present extreme explosion hazards. Our Zone 1 & 2 certified equipment provides reliable protection for mixing, storage, and processing facilities. We supply to major chemical companies across Gujarat, Maharashtra, and Rajasthan.</p></div>
+      <div class="industry-card"><div class="icon">⛽</div><h3>Oil & Gas</h3><p>From offshore platforms to onshore refineries, our IECEx certified equipment meets the most stringent safety standards. We serve upstream exploration, midstream pipelines, and downstream processing facilities across India.</p></div>
+      <div class="industry-card"><div class="icon">💊</div><h3>Pharmaceutical</h3><p>GMP-compliant clean room fittings, flameproof electrical equipment, and hygienic stainless steel enclosures for pharmaceutical API manufacturing, formulation plants, and packaging facilities.</p></div>
+      <div class="industry-card"><div class="icon">🌾</div><h3>Fertilizer Plants</h3><p>Ammonia, urea, and DAP manufacturing plants require robust flameproof solutions. Our products withstand corrosive atmospheres and high-temperature environments common in fertilizer manufacturing.</p></div>
+      <div class="industry-card"><div class="icon">🔬</div><h3>Refineries</h3><p>Petroleum refineries demand the highest safety standards. Our complete range of FLP luminaries, panels, and control equipment is installed in multiple refineries including ONGC, BPCL, and private sector facilities.</p></div>
+      <div class="industry-card"><div class="icon">⚗️</div><h3>Paint & Coatings</h3><p>Solvent-based paint manufacturing requires Zone 1 explosion-proof equipment throughout production areas. We provide complete FLP electrical solutions for paint manufacturing plants.</p></div>
+      <div class="industry-card"><div class="icon">🍷</div><h3>Distilleries & Breweries</h3><p>Alcohol-based vapors create Zone 2 hazardous areas in distillery and brewery environments. Our weatherproof and flameproof equipment meets these specialized requirements.</p></div>
+      <div class="industry-card"><div class="icon">🏗️</div><h3>Mining & Cement</h3><p>Dusty environments in mining, quarrying, and cement manufacturing require Zone 21 & 22 certified dust-ignition-proof equipment to prevent dust explosions.</p></div>
+      <div class="industry-card"><div class="icon">🚢</div><h3>Marine & Offshore</h3><p>Saltwater-corrosion-resistant FLP equipment for marine applications, offshore platforms, and ship engine rooms. Stainless steel enclosures with IP67 protection.</p></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== CLIENTS PAGE =================== -->
+<div class="page" id="page-clients">
+  <div class="about-page-hero"><div class="container"><div class="section-label">Our Partners</div><h1 class="section-title" style="font-size:52px;">Clients & <span>Partners</span></h1><div class="divider center"></div></div></div>
+  <section><div class="container">
+    <div class="section-head center"><p class="section-desc">Trusted by India's leading industrial companies across oil & gas, pharmaceutical, chemical, and fertilizer sectors.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:50px;">
+      <div class="client-logo" style="padding:24px;font-size:15px;">🛢️ Indian Oil Corporation</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">⛽ Bharat Petroleum</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🏭 ONGC</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🔬 OPAL (ONGC Petro)</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🌊 Petronet LNG</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">⚡ EESL</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🌿 Dabur India</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">💊 IPCA Laboratories</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🏥 Jubilant Life Sciences</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🎨 Berger Paints</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">☀️ Sun Pharma</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🌐 Aditya Birla Group</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">⚗️ Gharda Chemicals</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🔧 DCM Shriram</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🏭 Lanxess India</div>
+      <div class="client-logo" style="padding:24px;font-size:15px;">🌱 Sudarshan Chemical</div>
+    </div>
+    <section style="background:var(--dark3);border-radius:8px;border:1px solid var(--border);padding:40px;">
+      <div class="section-head center"><div class="section-label">Client Feedback</div><h2 class="section-title">Testimonials</h2><div class="divider center"></div></div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>Consistent quality, on-time delivery, and excellent after-sales support. Shreya Ex-Tech Private Limited is our go-to supplier for all FLP requirements.</p><div class="testimonial-author"><div class="author-avatar">R</div><div class="author-info"><div class="name">Ravi Kumar U.</div><div class="role">Plant Manager, Surat</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>We placed a bulk order for FLP panels and the quality exceeded our expectations. The team was very responsive to our customization requirements.</p><div class="testimonial-author"><div class="author-avatar">H</div><div class="author-info"><div class="name">Hitesh Prajapati</div><div class="role">Purchase Manager, Vadodara</div></div></div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>Best flameproof equipment supplier we've worked with. Their technical team understood our requirements perfectly and provided excellent solutions.</p><div class="testimonial-author"><div class="author-avatar">U</div><div class="author-info"><div class="name">Umesh Patel</div><div class="role">Electrical Head, Anand</div></div></div></div>
+      </div>
+    </section>
+  </div></section>
+</div>
+
+<!-- =================== CAREER PAGE =================== -->
+<div class="page" id="page-career">
+  <div class="about-page-hero"><div class="container"><div class="section-label">Join Our Team</div><h1 class="section-title" style="font-size:52px;">Career at <span>Shreya Ex-Tech Private Limited</span></h1><div class="divider center"></div></div></div>
+  <section><div class="container">
+    <div class="about-grid" style="margin-bottom:60px;">
+      <div><div class="section-label">Why Work With Us</div><h2 class="section-title">Be Part of <span>Something Great</span></h2><div class="divider"></div><p style="color:var(--text-muted);line-height:1.8;margin-bottom:14px;">At Shreya Ex-Tech Private Limited, we believe our employees are our greatest asset. We foster an environment of continuous learning, innovation, and professional growth. Join our 65+ member team and contribute to India's industrial safety.</p><p style="color:var(--text-muted);line-height:1.8;">We offer competitive salaries, performance bonuses, health insurance, and regular training opportunities.</p></div>
+      <div style="background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:30px;"><h3 style="font-family:'Rajdhani',sans-serif;font-size:18px;color:var(--white);margin-bottom:20px;">Benefits We Offer</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div class="highlight-item">Competitive Salary & Annual Increments</div>
+          <div class="highlight-item">Medical Insurance for Self & Family</div>
+          <div class="highlight-item">Provident Fund & ESI Benefits</div>
+          <div class="highlight-item">Annual Performance Bonus</div>
+          <div class="highlight-item">Technical & Soft Skills Training</div>
+          <div class="highlight-item">Growth-Oriented Culture</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-head"><div class="section-label">Open Positions</div><h2 class="section-title">Current <span>Openings</span></h2><div class="divider"></div></div>
+    <div class="job-card"><div class="job-info"><h3>Production Engineer</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Ahmedabad</span><span class="job-tag">3–5 Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+    <div class="job-card"><div class="job-info"><h3>Technical Sales Executive</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Pan India</span><span class="job-tag">2–4 Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+    <div class="job-card"><div class="job-info"><h3>Quality Control Inspector</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Ahmedabad</span><span class="job-tag">1–3 Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+    <div class="job-card"><div class="job-info"><h3>CNC Machine Operator</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Ahmedabad</span><span class="job-tag">2+ Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+    <div class="job-card"><div class="job-info"><h3>Purchase Executive</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Ahmedabad</span><span class="job-tag">1–2 Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+    <div class="job-card"><div class="job-info"><h3>Design Engineer (Electrical)</h3><div class="tags"><span class="job-tag">Full Time</span><span class="job-tag">Ahmedabad</span><span class="job-tag">3+ Yrs Exp</span></div></div><button class="btn btn-primary" onclick="navigate('inquiry')">Apply Now</button></div>
+  </div></section>
+</div>
+
+<!-- =================== CONTACT PAGE =================== -->
+<div class="page" id="page-contact">
+  <div class="about-page-hero"><div class="container"><div class="section-label">Get in Touch</div><h1 class="section-title" style="font-size:52px;">Contact <span>Us</span></h1><div class="divider center"></div></div></div>
+  <section><div class="container">
+    <div class="contact-grid">
+      <div>
+        <h2 style="font-family:'Oswald',sans-serif;font-size:32px;color:var(--white);margin-bottom:24px;">We're Here to Help</h2>
+        <p style="color:var(--text-muted);margin-bottom:32px;line-height:1.8;">Have a query about our products? Need a custom solution? Want to place a bulk order? Reach out to us through any of the channels below and our team will respond within 24 hours.</p>
+        <div class="contact-detail"><div class="icon">📞</div><div><h4>Phone Numbers</h4><p>08048953911 (Main)</p><p>Dedicated Customer Support</p></div></div>
+        <div class="contact-detail"><div class="icon">📧</div><div><h4>Email Address</h4><p><a href="/cdn-cgi/l/email-protection#2754464b425467544f55425e46425f5342444f0944484a"><span class="__cf_email__" data-cfemail="d2a1b3beb7a192a1baa0b7abb3b7aaa6b7b1bafcb1bdbf">[email&#160;protected]</span></a></p></div></div>
+        <div class="contact-detail"><div class="icon">📍</div><div><h4>Factory & Office Address</h4><p>Block No. 700, Manjusar–Savli Road,<br>Manjusar, Taluka Savli,<br>Vadodara – 391775<br>Gujarat, India</p></div></div>
+        <div class="contact-detail"><div class="icon">🏛️</div><div><h4>GST & IEC Details</h4><p>GST No.: 24AAJCS6820J1Z6</p><p>IEC: 3408005702</p><p>GST Registration: 01-07-2017</p></div></div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:24px;text-transform:uppercase;">Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name"></div>
+          <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email Address *</label><input type="email" placeholder="your@email.com"></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="form-group"><label>Subject</label><input type="text" placeholder="Product inquiry / Technical query / Other"></div>
+        <div class="form-group"><label>Message *</label><textarea placeholder="Please describe your requirements, product of interest, quantity, specifications, etc."></textarea></div>
+        <button class="btn btn-primary" style="width:100%;" onclick="alert('Thank you! We will contact you within 24 hours.')">Send Message</button>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== INQUIRY PAGE =================== -->
+<div class="page" id="page-inquiry">
+  <div class="about-page-hero"><div class="container"><div class="section-label">Get a Quote</div><h1 class="section-title" style="font-size:52px;">Product <span>Inquiry</span></h1><div class="divider center"></div></div></div>
+  <section><div class="container" style="max-width:800px;">
+    <div class="contact-form">
+      <h3 style="font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:24px;text-transform:uppercase;">Request for Quotation</h3>
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name"></div>
+        <div class="form-group"><label>Company Name *</label><input type="text" placeholder="Your company"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email *</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-group"><label>Phone *</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="form-group"><label>Address / City</label><input type="text" placeholder="City, State, Country"></div>
+      <div class="form-group"><label>Product Category</label><select><option>Select Category</option><option>Luminaries Products</option><option>Limit Switches</option><option>Switch Gears</option><option>Control Panels</option><option>Distribution Box</option><option>Junction Box</option><option>Push Button Station</option><option>Plug & Socket</option><option>Thermocouple Head</option><option>Clean Room Fitting</option><option>Heater Enclosure</option><option>Accessories</option><option>Miscellaneous / Other</option></select></div>
+      <div class="form-group"><label>Product Details / Model Number</label><input type="text" placeholder="Specific product name or model number"></div>
+      <div class="form-group"><label>Quantity Required</label><input type="text" placeholder="Approximate quantity"></div>
+      <div class="form-group"><label>Special Requirements / Message *</label><textarea placeholder="Please describe zone classification, certifications needed, custom dimensions, voltage, mounting type, etc."></textarea></div>
+      <button class="btn btn-primary" style="width:100%;" onclick="alert('Thank you for your inquiry! Our sales team will contact you within 24 hours with a quotation.')">Submit Inquiry</button>
+      <p style="text-align:center;margin-top:14px;font-size:12px;color:var(--text-muted);">Or call us directly: <strong style="color:var(--primary);">+91 98765 43210</strong></p>
+    </div>
+  </div></section>
+</div>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" onclick="navigate('home')"><img src="data:image/jpeg;base64,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" style="width:54px;height:54px;object-fit:contain;border-radius:4px;" alt="SEPL Logo"><div class="logo-text"><div class="brand">Shreya Ex-Tech Private Limited</div><div class="sub">Flameproof Equipment</div></div></div>
+        <br>
+        <p>Leading manufacturer and supplier of Flameproof & Explosion-Proof equipment for Chemical, Oil & Gas, Pharmaceutical, and Refinery sectors since 2006.</p>
+        <div class="social-links"><a href="https://www.facebook.com/seplflp/" target="_blank" class="social-btn" style="text-decoration:none;color:inherit;">f</a><a href="https://in.linkedin.com/company/seplflp" target="_blank" class="social-btn" style="text-decoration:none;color:inherit;">in</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a onclick="navigate('home')">Home</a></li>
+          <li><a onclick="navigate('about')">About Us</a></li>
+          <li><a onclick="navigate('products')">All Products</a></li>
+          <li><a onclick="navigate('clients')">Our Clients</a></li>
+          <li><a onclick="navigate('industries')">Industries</a></li>
+          <li><a onclick="navigate('career')">Career</a></li>
+          <li><a onclick="navigate('contact')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a onclick="navigate('cat-junction')">Junction & Push Box</a></li>
+          <li><a onclick="navigate('cat-openable')">Openable LED Light Fitting</a></li>
+          <li><a onclick="navigate('cat-luminaries')">Well Glass Light Fitting</a></li>
+          <li><a onclick="navigate('cat-switchgear')">Flameproof Switchgears</a></li>
+          <li><a onclick="navigate('cat-panels')">Control Panel</a></li>
+          <li><a onclick="navigate('cat-rotary')">Rotary Switches</a></li>
+          <li><a onclick="navigate('cat-cablegland')">Cable Gland & Stopper</a></li>
+          <li><a onclick="navigate('cat-cleanroom')">Clean Room Light Fitting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Details</h4>
+        <p>📞 08048953911</p>
+        <p>📱 Fast, Dedicated Support</p>
+        <br>
+        <p>📧 <a href="/cdn-cgi/l/email-protection#dcafbdb0b9af9cafb4aeb9a5bdb9a4a8b9bfb4f2bfb3b1"><span class="__cf_email__" data-cfemail="1b687a777e685b6873697e627a7e636f7e787335787476">[email&#160;protected]</span></a></p>
+        <br>
+        <p>📍 Block No. 700, Manjusar–Savli Road, Manjusar, Vadodara – 391775, Gujarat, India</p>
+        <br>
+        <p style="font-size:11px;color:var(--primary);">GST: 24AAJCS6820J1Z6</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© Copyright 2024 Shreya Ex-Tech Private Limited All Rights Reserved. | Manufacturer of Flameproof Lighting & Switchgear | Block No. 700, Manjusar–Savli Road, Manjusar, Vadodara – 391775, Gujarat, India | GST: 24AAJCS6820J1Z6</div>
+  </div>
+</footer>
+
+<script>
+function navigate(page){
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  var el = document.getElementById('page-' + page);
+  if(el){ el.classList.add('active'); window.scrollTo(0,0); }
+  // update nav active state
+  document.querySelectorAll('nav a').forEach(function(a){ a.classList.remove('active'); });
+  var nav = document.getElementById('mainNav');
+  if(nav){ nav.classList.remove('open'); }
+}
+
+function toggleMenu(){
+  var nav = document.getElementById('mainNav');
+  if(nav){ nav.classList.toggle('open'); }
+}
+
+// Set home as active on load
+window.onload = function(){
+  navigate('home');
+};
+</script>
+</body>
+</html>
